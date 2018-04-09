@@ -1,0 +1,129 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_PFTrack, es una aplicación que nos permitirá generar tracking, de cámara 3d, así, como también, tracking, de
+
+	objetos 3d, entre otras posibilidades de producción y paso contínuo
+
+
+
+	Source:
+	_______
+
+	_el material de archivo que podremos importar en PFTrack, son sólo secuencias de imágemes, de ésta manera,
+
+	debemos de preparar todo el material de archivo exportando éste como secuencia de imágenes previamente a la 
+
+	importación dentro de pftrack
+
+
+
+	Camara Solver:
+	______________
+
+	_el sistema requiere al menos 8, puntos de trackeo en el modo manual a través, del nodo "User Track", para 
+
+	generar ó resolver de la cámara 3d
+
+
+
+	Project:
+	________
+
+	_al abrir la aplicación lo primero que tendremos que hacer es crear un nuevo proyecto, indicando una ruta de
+
+	guardado, nombre, otros
+
+
+
+	AutoSave:
+	_________
+
+	_el software, irá guardando todos los cambios que vayamos produciendo a través, del tiempo de forma automática
+
+	de ésta manera, no tendremos que hacer guadados manualmente a través, del tiempo
+
+
+
+
+	Process:
+	________
+
+	_a continuación se enuncian los procesos prosibles hasta ahora en la versión de PFTrack 2017:
+
+
+
+		_3D Camara Tracking:
+
+			_
+
+
+
+		_Object Tracking:
+
+			_
+
+
+
+		_Solving a Camara with Object Tracking:
+
+			_
+
+
+
+		_Image Modeling:
+
+			_
+
+
+		
+		_Remove Objects:
+
+			_
+
+
+
+		_Photogrametry:
+
+			_
+
+
+		
+		_Lens Correction:
+
+			_
+
+
+
+		_Stereoscopic:
+
+			_
+
+
+
+		_Depth Planes:
+
+			_
+
+
+
+
+
+
+

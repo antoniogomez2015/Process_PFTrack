@@ -1,0 +1,98 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá poder calcular ó estimar la focal del objetivo utilizado por la cámara para realizar 
+
+	la toma del source, de video, lo cuál, le permitirá al sistema poder realizar un mejor calculo del sistema ha 
+
+	generar
+
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo del source, de video y hacer "mouse right click", para abrir el
+
+	panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Utilities/
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Estimate Focal", para que así, éste sea agregado al arbol de 
+
+	nodos del sistema
+
+
+
+
+
+	Workflow:
+	_________
+
+	_una vez agregado el nodo de "Estimate Focal", y de haber hecho doble click, en éste para ver sus opciones
+
+
+	_podremos ver en el viewport, por defecto las opciones "X Axis", la cuál, estará representada por una serie de
+
+	lineas paralelas de color rojo las cuáles, debemos de horientar en relación a la horizontal del plano ha 
+
+	tracker
+
+
+	_para lo cuál, podremos hacer "mouse left click", sobre un punto determinado sobre una de las líneas de color
+
+	rojo
+
+
+	_para que así, podamos reposicionar ésta linea de color rojo, arrastrando el punto que hemos creado sobre ésta
+
+
+	_para posteriormente crear otro punto sobre ésta misma linea de color rojo en lugar ó longitud diferente para
+
+	que así, a través, de éste otro punto podamos reposicionar la linea de forma más precisa en relación al plano
+
+	horizontal que deseamos conseguir
+
+
+	_éste mismo proceso lo podremos repetir con otra cordenada, por ejemplo, con la cordenada "Y Axis", para que 
+
+	así, el sistema pueda calcular de forma mucho más precisa la focal de la cámara
+
+	
+	_de ésta manera, el sistema podrá generar un plano de coordenadas a través, del cúal, podra calcular la focal
+
+	optica con la cuál, fue grabado el plano en relación con la distorsión del plano conformado
+
+
+	
+	NOTA: más si sabemos la focal con la cuál, se ha grabado el material, podremos indicar éste valor directamente
+
+
+
+
+
+
+

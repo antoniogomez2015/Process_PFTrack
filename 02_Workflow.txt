@@ -1,0 +1,60 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_a continuación se enunian la configuración de nodos más comúnes de los procesos estandar ha realizar en 
+
+	PFTrack 2017:
+
+
+
+
+	3D Camara Tracking:
+	___________________
+
+
+		_Source:
+
+			_éste nodo se auto generará en el momento de importar el material de archivo y arrastrar éste
+
+			hasta el arbol de nodos
+
+
+		_Utilities / Estimate Focal:
+
+			_éste nodos nos permitirá definir la focal del objetivo óptico utilizado en la toma
+
+
+		_Tracking / Simple Track and Solver:
+
+			_éste nodos nos permitirá crear el trackeo y a su vez, generar la cámara 3d
+
+
+		_Utilities / Orient Scene:
+
+			_éste nodo nos permitirá indicar un "center point", a través, del cuál, se indicará un 
+
+			eje de cordenadas así, como también, podremos re orientar la rotación, posición y escala
+
+			del plano en general
+
+
+
+
+
+
+
+
+

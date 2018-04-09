@@ -1,0 +1,118 @@
+
+
+
+
+	PFTrack
+
+		Semi-Automatic Stereoscopic Conversion_hd
+
+			https://www.youtube.com/watch?v=MdF37l9jQrw
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá realizar todo el proceso de trackeo y generación de cámara 3d, dentro de un mismo nodo
+
+	y proceso
+
+
+	_lo cuál, es especialmente útil y práctico para la mayoría de procesos más comúnes
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo del "Estimate Focal", en la mayoría de los casos y hacer 
+
+	"mouse right click", sobre éste para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Tracking /
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Simple Track and Solve", para que así, éste sea agregado al 
+
+	arbol de nodos del sistema
+
+
+
+
+
+	Workflow:
+	_________
+
+	_una vez agregado el nodo de "Simple Track and Solve", y de haber hecho doble click, en éste para ver sus 
+
+	opciones
+
+
+	_dispondremos de unas opciones bastante simplificadas y guiadas para la generación del sistema, entre las 
+
+	cuáles, dispondremos de dos opciones simples las cuáles, son las siguientes:
+
+
+
+	Start Automatic Feature Tracking:
+	_________________________________
+
+	_primeramente debemos de colocar el cabezal del timeline, en el frame, "0", para a continuación proceder ha 
+
+	darle al botón "Start Automatic Feature Tracking"
+
+
+	_ya que a través, de ésta opción el sistema comenzará ha realizar el proceso de trackeo ó rastreo de las escena
+
+	por medio de dos pasadas, donde una pasada se realizará hacia adelante y la otra pasada se realizará hacia atras
+
+
+	_y para lo cuál, dispondremos de un gráfico horizontal en el modo de visualización de "Marquee", a través, del 
+
+	cuál, podremos visualizar el desenvolvimiento del proceso del trackeo a través, del tiempo
+
+
+	_más también, dispondremos de las opciones de "Advanced Settings", a través, de las cuáles, podremos configurar
+
+	las opciones de cámara, puntos de trackeo y su estimación 
+
+
+	_como también, de las opciones de umbral y marginación a través, de las cuáles, podremos desestimar puntos de 
+
+	trackeo y como también, de indicar un umbral personalizado mínimo a través, del cuál, el sistema se señira para la 
+
+	generación del sistema en relación a nuestras necesidades
+
+
+
+
+	Solve for Camara Motion:
+	________________________
+
+	_y por último en el modo de visualización de "Marquee", dispondremos de la opción ó botón de 
+
+	"Solve for Camara Motion", a través, del cuál, el sistema podrá hacer el volcado ó generación de la cámara 3d, 
+
+	así, como de generar los puntos de referencia 3d, en la escena reconstruida
+
+
+	_la cuál, podremos visualizar a través, del botón "Two Horitontal/Vertical Viewport", en el panel de herramientas 
+
+	de la derecha de la interface, en la parte superior
+
+
+
+
+
+
+

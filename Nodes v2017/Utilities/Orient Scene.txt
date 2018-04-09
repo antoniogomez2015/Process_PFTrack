@@ -1,0 +1,129 @@
+
+
+
+
+	PFTrack
+
+		Semi-Automatic Stereoscopic Conversion_hd
+
+			https://www.youtube.com/watch?v=MdF37l9jQrw
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá indicar un "Center Point", a través, del cuál, la escena podrá generar un plano de
+
+	coordenadas Axis: "X, Y, X"
+
+
+	_así, como también, nos pemritirá poder re orientas los planos generados por medio de herramientas de 
+
+	transformación como "translate, rotation, scale"
+
+
+	_de ésta manera, podremos orientas los planos en relación a la lógica y perspectiva de la escena real de la toma
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo del "Simple Track and Solve", en la mayoría de los casos y hacer 
+
+	"mouse right click", sobre éste para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Utilities /
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Orient Scene", para que así, éste sea agregado al arbol de nodos 
+
+	del sistema
+
+
+
+
+
+	Workflow:
+	_________
+
+	_una vez agregado el nodo de "Orient Scene", y de haber hecho doble click, en éste para ver sus 
+
+	opciones
+
+
+	_de ésta manera, dispondremos de tres módulos a través, de los cuáles, podremos configurar toda la escena
+
+	ha generar posteriormente una vez generado el sistema
+
+
+
+
+	Transform:
+	__________
+
+	_a través, de éste módumo podremos mover, rotar y escalar el sistema generado dentro del espacio 3d, de forma
+
+	específica a través, de valores numericamente indicados por nosotros
+
+
+
+
+	Trackers:
+	_________
+
+	_éste módulo nos permitirá seleccionar un punto de trackeo a partir del cuál, el sistema podrá generar un 
+
+	"Center Point Axis"
+
+
+	NOTA: ésta opción también, la podremos realizar directamente en el viewport, 2d, ó 3d, parar tener así, una 
+
+	mayor orientación espacial y lógica dentro de la escena real y la escena generada por el sistema
+
+
+
+
+	Orientation:
+	____________
+
+	_éste módulo sólo estará activo cuando hayamos seleccionado un punto de trackeo en el módulo anterior a través,
+
+	del cuál, se generará el "Center Point Axis", posteriormente
+
+
+	_de ésta manera, una vez hayamos seleccionado un "track point", podremos hacer mouse left click, sobre el botón
+
+	"Set Origin"
+
+
+	_para que así, el sistema genere un axis, de cordendas en el punto de trackeo seleccionado así, como también,
+
+	los planos de cordenadas los cuáles, podremos modificar espacialmente a través, de las herramientas de pivote
+
+
+	_de ésta manera, dispodremos ahora de las opciones de "Edit Mode", en las cuáles, podremos disponer de las
+
+	opciones de "Translate, Rotate, Scale, Otros"
+
+	
+	_por medio de las cuáles, podremos hacer transformaciones sobre los planos en relación a nuestras necesidades
+
+	y requerimientos del plano ha re construir
+
+
+
+
+
+
+
