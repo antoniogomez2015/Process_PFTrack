@@ -20,12 +20,16 @@
 	Descripción:
 	____________
 
-	_éste nodo nos permitirá poder calcular ó estimar la focal del objetivo utilizado por la cámara para realizar 
+	_éste nodo nos permitirá crear los puntos de seguimiento, específicamente "8", puntos de trackeo a travñes, de
 
-	la toma del source, de video, lo cuál, le permitirá al sistema poder realizar un mejor calculo del sistema ha 
+	los cuáles, el sistema podrá posteriormente generar la cámara y planos 3d
 
-	generar
 
+	_de ésta manera, a través, de éste modo podremos crear puntos de seguimiento personalizados pudiendo así, ser
+
+	más precisos y meticulosos a la hora de crear planos, referencias de objetos, seguimiento de parte de objetos,
+	
+	entre otros procesos de producción y paso contínuo
 
 
 
@@ -33,15 +37,15 @@
 	Node:
 	_____
 
-	_de ésta manera, debemos posarnos sobre el nodo del source, de video y hacer "mouse right click", para abrir el
+	_de ésta manera, debemos posarnos sobre el nodo "Estimate Focal", ó "Undistort", por lo general y una vez allí,
 
-	panel contextual en el cuál, debemos de ir a las opciones de:
-
-
-		_Utilities/
+	hacer "mouse right click", para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
 
 
-	_en la cuál, debemos de seleccionar el nodo de "Estimate Focal", para que así, éste sea agregado al arbol de 
+		_Tracking/
+
+
+	_en la cuál, debemos de seleccionar el nodo de "User Track", para que así, éste sea agregado al arbol de 
 
 	nodos del sistema
 
@@ -52,43 +56,177 @@
 	Workflow:
 	_________
 
-	_una vez agregado el nodo de "Estimate Focal", y de haber hecho doble click, en éste para ver sus opciones
+	_una vez agregado el nodo de "User Track", y de haber hecho doble click, en éste para ver sus opciones
 
 
-	_podremos ver en el viewport, por defecto las opciones "X Axis", la cuál, estará representada por una serie de
 
-	lineas paralelas de color rojo las cuáles, debemos de horientar en relación a la horizontal del plano ha 
+	Current:
+	________
 
-	tracker
-
-
-	_para lo cuál, podremos hacer "mouse left click", sobre un punto determinado sobre una de las líneas de color
-
-	rojo
+	_podremos seleccionar entre las diferentes cámaras que tengamos creadas en el arbol de nodos, como también,
+	
+	cargar un preset, existente
 
 
-	_para que así, podamos reposicionar ésta linea de color rojo, arrastrando el punto que hemos creado sobre ésta
+
+	Options:
+	________
 
 
-	_para posteriormente crear otro punto sobre ésta misma linea de color rojo en lugar ó longitud diferente para
-
-	que así, a través, de éste otro punto podamos reposicionar la linea de forma más precisa en relación al plano
-
-	horizontal que deseamos conseguir
+	NOTA: las opciones sólo estarán disponibles al haber creado como mínimo un punto de trackeo previamente
 
 
-	_éste mismo proceso lo podremos repetir con otra cordenada, por ejemplo, con la cordenada "Y Axis", para que 
+	Parameters:
 
-	así, el sistema pueda calcular de forma mucho más precisa la focal de la cámara
+	_a través, de las opciones de configuración de los puntos de trckeo, podremos indicar el criterio de trabajo
+
+	como canales de color, criterios de rendimiento ó sobre velocidad, deformación, actualización del viewport,
+
+	umbral de intensidad del análisis, mangen de error del análisis, rango de pulido ó perfección, modos de 
+
+	keyframes, tomar en cuenta la iluminación baja, tomar en cuenta del desenfoque de la imágen
+
+
+	Errors:
+
+	_ésta opción nos permitirá visualizar un rango ó umbral de errores del análisis a través, de un gráfico por
+
+	medio del cuál, podremos estimar la calidad ó validés del resultado obtenido del proceso de seguimiento de un
+
+	punto determinado
+
+
+	Aceleration:
+
+	_ésta opción nos permitirá visualizar un rango ó umbral de errores del análisis a través, de un gráfico por
+
+	medio del cuál, podremos estimar la calidad ó validés del resultado obtenido del proceso de seguimiento de un
+
+	punto determinado
+
+
+
+
+
+
+
+	Tracks:
+	_______
+
+	_primeramente debemos de darle a la opción de "Create", para que así, a partir de éste punto podamos crear un
+
+	nuevo punto de track, sobre el viewport, de análisis
+
+
+	_para que así, a partir de éste punto sean activas ó visibles las demás opciones del panel "Tracks", como las
+
+	opciones del panel "Options Properties"
+
+
+	_de ésta manera, podremos ajustar el tamaño del área de muestreo como la del área de búsqueda en relación a las
+
+	necesidades de la imágen y la muestra respectiva
+
+
+	_alternativamente podremos activar dentro del panel tracks, la opción de "Center View", para que así, la muestra
+
+	respectiva se centre en el medio del viewport, para que así, tengamos una mejor visualización a la hora de
+
+	realizar el rastreo ó trackeo respectivo
+
+
+	_éstos puntos de trackeo los podremos renombrar, eliminar, exportar, importar, dividir, bloquear, colorizar, otros
+
+
+
+		Tracking:
+		________
+
+		_una vez configurado el track point, y sus características de visulización, podremos colocar el cabezal
+
+		el timeline, en el frame, "0", por lo general para comenzar con el proceso de seguimiento
+
+
+		_para a continuación ir a las opciones del panel "Track/", en la cuáles, encontraremos las opciones de
+
+		trackeo "forward / backward", continuous y frame to frame
+
+
+		_de ésta manera, a través, de éstos controles de seguimiento y por medio a su vez, del panel viewport, 
+
+		podremos ir rastreando el punto de trackeo a través, del tiempo hasta terminar el seguimiento de área 
+
+		deseada
+
+
+		
+		Remove Keyframes:
+		_________________
+
+		_más también, en escenas complejas requeriremos hacer seguimiento de puntos de rastreo de forma 
+
+		segmentada, es decir, en los casos en los que la muestra salga de toma ó que otros elementos pasen
+
+		sobre la muestra respectiva
+
+
+		_requeriremos en éstos casos pausar el análisis y borrar keyframes, hacia adelante ó keyframes, hacia
+
+		atras de frames, donde la muestra respectiva se salga de toma ó donde otros elementos pasen delante de
+
+		ésta
+
+
+		_de ésta manera, dispondremos de las opciones de "Remove Current Frame", "Remove all earlier keyframes"
+
+		"Remove all laster keyframes"
+
+
+
+
+		Hiden:
+		______
+
+		_más a parte de borrar los keyframes, no deseados requeriremos también, requeriremos pausar el análisis
+
+		en segmentos donde pases elementos delante de la muestra ó en donde la muestra salga de la toma
+
+
+		_para que así, éstas partes no deseadas no afecten el resultado deseado
+
+
+		_de ésta manera, dispondremos de las opciones de "Hiden Current Frame", "Hiden all earlier keyframes"
+
+		"Hiden all laster keyframes"
+
+
+		_así, una vez oculto el punto de trackeo para que así, el sistema no tenga en cuenta ese punto en un 
+
+		segmento de tiempo determinado
+
+
+		_podremos posteriormente nuevamente hacer mouse left click, sobre la muestra en el viewport, de análisis
+
+		donde aparezca nuevamente la muestra respectiva para continuar así, el seguimiento respectivo hasta
+
+		terminar el proceso
+
+
+
+	_más también, los puntos de trackeo creados los podremos importar, exportar, dupliar, borrar, colorear dividir, 
+
+	previsualizar, marcar, otros
+
+
+
+
+
+
 
 	
-	_de ésta manera, el sistema podrá generar un plano de coordenadas a través, del cúal, podra calcular la focal
-
-	optica con la cuál, fue grabado el plano en relación con la distorsión del plano conformado
-
-
 	
-	NOTA: más si sabemos la focal con la cuál, se ha grabado el material, podremos indicar éste valor directamente
+
+
 
 
 

@@ -1,0 +1,346 @@
+
+
+
+
+	PFTrack
+
+		Semi-Automatic Stereoscopic Conversion_hd
+
+			https://www.youtube.com/watch?v=MdF37l9jQrw
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá generar la cámara y escena 3d, a paritr de los puntos de trackeo creados y analizados
+	
+	en el proceso previo
+
+
+	_así, como también, nos pemritirá generar planos de referencia a partir de alineaciones de puntos de trackeo, lo
+
+	que nos permitirá crear y utilizar éstas referencias en aplicaciones 3d, de terceros para la interacción, mapeo,
+
+	simulación, montaje, otros
+
+
+	_así, como también, podremos generar y re orientas ejes y planos de coordenadas de la escena en relación a las
+
+	necesidades de producción y de elementos trackeados en la escena de forma independiente ó individual
+
+
+	_de ésta manera, podremos emular las características y condiciones de una escena de una imágen ó video pudiendo
+
+	así, extrapolar éstas a un entorno 3d, de producción
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo de "User Track", ó "Auto-Track" en la mayoría de los casos y hacer 
+
+	"mouse right click", sobre éste para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Solving /
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Camara Solver", para que así, éste sea agregado al arbol de nodos 
+
+	del sistema
+
+
+
+
+
+	Workflow:
+	_________
+
+	_una vez agregado el nodo de "Camara Solver", y de haber hecho doble click, en éste para ver sus 
+
+	opciones
+
+
+	_de ésta manera, dispondremos de tres módulos a través, de los cuáles, podremos configurar toda la escena
+
+	ha generar posteriormente una vez generado el sistema
+
+
+
+	
+	Current:
+	________
+
+	_a través, de éste módumo podremos seleccionarl a cámara de trabajo así, como también, el rango de trabajo
+
+	indicado "front / end", frames
+
+
+	_así, como también, nos brinda una opción para indicar el frame, inicial a partir del cuál, se comenzará ha
+
+	realizar el análisis, de ésta manera, el sistema no realizará el análisis por defecto desde el frame "0",
+
+	para lo cuál, tendremos que desactivar la opción de "Set initial frames automatically"
+
+
+	_también dispone de una opcíón "Solve for initial solution only", (indeterminada)
+
+
+	_también dispone de una opcíón "Use input motion as hint", ésta opción hará que el sistema contemple el 
+
+	movimiento de la cámara entrante como el movimiento sugerido ha recrear
+
+
+	_también dispone de una opcíón "Use tracker z-depth when available", para que el sistema contemple en el 
+
+	cálculo un mapa de densidad generado de existir éste en el arbol de nodos al realizar el proceso
+
+	
+	_también dispone de una opcíón "exahustive", de ésta manera, el sistema realizará un proceso más refinado
+	
+	y más detallado, aunque puede hacer que el sistema vaya más lento
+
+
+	_una vez configurado las características y parámetros del sistema ha generar, dispondremos del botón 
+
+	"Salve All", para que así, el sistema genere la cámara 3d, y todos puntos de trackeo a la vez
+
+
+	_"Solve Tracker", (indeterminado), al parecer ésta opción trackeo sólo los puntos de trackeo en el espacio 3d
+
+
+	_más una vez realizado el proceso prodremos hacer ajustes sobre los puntos de trackeo, para que así, una vez
+
+ 	realizado cambios en los puntos de trackeo poder hacer "Refine All", para que así, los puntos de trackeo sean
+
+	actualizados
+
+
+	_más también, podremos hacer ajustes sobre la cámara generada, de ésta manera, podremos hacer Refine Camara",
+
+	una vez hayamos realizado cambios sobre el sistema generado de cámara 3d
+
+
+
+
+	Display:
+	________
+
+	_éstas opciones nos permitirá poder ó nó visualizar tanto el suelo, la línea de horizonte, los puntos de 
+
+	trackeo, geometrías exsitentes, proyecciones, nombres de los puntos de trackeo así, como también, la información 
+
+	de los puntos de trackeo
+
+
+	_más también, nos permitirá poder hacer selecciones de puntos de trackeo de forma interactiva directamente en el
+
+	viewport, de análisis ó en el view 3d, para lo cuál, dispondremos del botón "Marquee"
+
+
+	_de ésta manera, cuando el botón marquee, esté activado podremos hacer selecciones de tipo rectángulo sobre 
+
+	grupos de puntos de trackeo determinados contiguos unos de otros
+
+
+	_más también, podremos ir sumando seleccionaes, creando selecciones posteriores con la tecla "Control", 
+
+	presionada previamente
+
+
+	_más también, podremos hacer selecciones personalizadas con la opción de modo de selección de tipo "lazo", para
+
+	la cuál, debemos de pulsar la tecla "Shift", previamente antes de realizar la selección respectiva
+
+
+
+
+	Orientation:
+	____________
+
+	_éste panel nos permitirá crear de forma alternativa un axis de cordenadas de una vez en el mismo proceso de
+
+	creación del sistema de cámara 3d
+
+
+	_para lo cuál, debemos de ir al panel "Camara Solver/Trackers", y una vez allí, seleccionar un punto de trackeo
+
+	ó hacerlo directamente en el viewport, de análisis
+
+
+	_y con un punto de trackeo seleccionado proceder ha a darle a la opción de "Set Origin", para que así, éste
+
+	sea generado en el mismo proceso
+
+
+	_así, como también, podremos indicar la cadencia de frames, analizados para la generación del sistema de ésta
+
+	manera, podremos indicar que el análisis se realizar en todos los fotogramas existentes ó indicados ó por el
+
+	contrario
+
+
+	_que el análisis se realizar cada "2,5, ó 10 frames", lo cuál aligerará el proceso aunque también, el resultado
+
+	será más impreciso
+
+	
+
+
+	Options:
+	________
+
+
+
+	Camara:
+
+	_ésta opción crear un referencia de cámara a través, de una interpretación de la misma, más tendremos la 
+
+	posibilidad de personalizar la cámara pudiendo así, indicar valores y parámetros específicos, para lo cuál,
+
+	dispondremos de las siguientes opciones:
+
+
+
+		_Unknown:
+
+			_ésta es la opción por defecto en la cuál, el sistema interpreta la cámara de la toma ha generar
+
+
+
+		_Known:
+
+			_ésta opción activa las opciones de "Focal Length", a través, de la cuál, podremos indicar la
+
+			longitud focal utilizada por el objetivo de la cámara con la cuál, fue hecha la toma
+
+
+			_así, como también, activa las opciones de "Field of view", ó campo de vista del objetivo
+
+
+
+		_Initialized:
+
+			_ésta opcíón es idéntica a la opción anterior, más la opción de "Initialized", activa
+
+			adicionalmente las opciones de "Focal range", la cuál, permite indicar un rango focal 
+
+			aproximado del objetivo utilizado por la cámara para realizar la toma
+
+
+
+
+	_más si debemos indicarle al sistema el tipo de movimiento de cámara existente en la toma para lo cuál,
+
+	dispondremos de la opción de "Translation", en la cuál, dispondremos de las opciones de: No Smooth, Low Smooth,
+
+	Med Smooth, High Smooth
+
+
+	_más también, la opción de "Translate", dispone de opciones de constraint, ó restricciones de los movimientos 
+
+	de la cámara, de ésta manera, dispondremos de las siguientes restricciones:
+
+
+		_None, Off-Centre, Small, Normal, Linear, Planar
+
+
+
+	_más también, debemos indicarle al sistema el tipo de rotación de cámara existente en la toma para lo cuál,
+
+	dispondremos de la opción de "Rotation", en la cuál, dispondremos de las opciones de: No Smooth, Low Smooth,
+
+	Med Smooth, High Smooth
+
+
+	_"Focal Length", ésta opción nos permitirá indicarle al sistema el tipo de focal, ésta opción nos estará 
+
+	disponible para la opción de "known"
+
+
+	_así, como también, podremos restringir que la rotación de la cámara se siña a la orientación del eje principal
+
+	en el plano de ejes generado por el sistema	
+
+
+	_otra opción muy importante es indicar si el objetivo utilizado en la cámara para realizar la toma es de 
+
+	longitud focal variable ó objetivo zoom, para lo cuál, dispondremos de la opción de "Variale focal"
+
+
+	
+
+
+
+	Distortion:
+
+	_éste módulo nos permite realizar ajustes sobre la distorsión existente en la escena para que ésta sea
+
+	contemplada por el sistema a la hora de generar la cámara 3d
+
+
+	_más éstas opciones están desactivadas ó pasivas por defecto y no se pueden hacer modificaciones y 
+
+	personalizaciones sobre éstas
+
+
+
+	Tracker:
+
+	_éste módulo nos lista los puntos de tracker, generados por el sistema ó por nosotros previamente para que así,
+
+	a través, de éste panel podremos seleccionar una ó más puntos de trackeo 
+
+
+	_como también, podremos activar ó desactivar éstos, también, podremos ajustar sus pesos ó influencias en el 
+
+	proceso ha generar, también, podremos personalizar la distancia entre éstas lo cuál, cambiará la escala del 
+
+	sistema generado 
+
+
+	_también, podremos hacer suavizados generales de puntos de trackers, seleccionados, como también, podremos hacer 
+
+	intensificaciones de puntos de trackeo seleccionados, otros
+
+
+
+	Constraints:
+
+	_éste módulo nos permitirá generar planos a partir de puntos de trackeo seleccionados estratégicamente
+
+
+
+	Erros:
+
+	_éste módulo nos permitirá visualizar el umbral de errores de los puntos de trackeo a través, de un gráfico
+
+	de ésta manra, podremos indicar un umbral aceptable de errores a través, de un limitador ó una opción de
+
+	"Trim", para que así, podamos limitar el margen de error en cada punto de trackeo ó en todo en general
+	
+
+
+	Solver Log:
+
+	_éste módulo nos permitirá visualizar un listado de todos los errores en orden en relación a los puntos de 
+
+	trackeo existentes
+
+
+
+
+
+
+
+

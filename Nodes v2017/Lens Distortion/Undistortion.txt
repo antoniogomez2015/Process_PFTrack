@@ -1,0 +1,113 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá poder corregir la distorsión esférica de una imágen ó video, de ésta manera, podremos
+
+	estabilizar la distorsión sobre un recurso hasta un umbral aceptable antes de realizar el proceso global
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo "Estimate Focal", por lo general, y una vez allí, hacer 
+
+	"mouse right click", para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Lens Distortion/
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Undistort", para que así, éste sea agregado al arbol de 
+
+	nodos del sistema
+
+
+
+
+
+	Workflow:
+	_________
+
+	_una vez agregado el nodo de "Undistort", y de haber hecho doble click, en éste para ver sus opciones
+
+
+
+	Current:
+	________
+
+	_de ésta manera, podremos indicar en las opciones el umbral de distorsión, el centro de la lente, la
+
+	proporción de pixeles para ver si ésta es anamorfica ó no
+
+
+
+	Camara:
+	_______
+
+	_así, como también, podremos hacer ajustes en la focal de la cámara ó resetear todas sus propiedades para
+
+	poder así, volver ha configurar todas sus características
+
+
+
+	Measurement:
+	____________
+
+	_para posteriormente darle a la opción de "New Line", para que así, podamos crear un nueva línea guia para
+
+	lo cuál, debemos ir al viewport, y hacer un primer mouse left click, sobre un extremo de un elemento 
+
+	referencial vertical, por ejemplo; de un poste
+
+
+	_para posteriormente crear otro punto de referencia haciendo mouse left click, en el otro extremo del poste, 
+
+	para que así, una línea recta guia sea generada
+
+
+	_más a partir de éste punto, una vez hemos creado la línea guia podremos crear más puntos de referencia los
+
+	cuáles irán creando otras líneas guias ha modo de segmentos
+
+
+	_los cuáles, demarcarán la distorsión ó curva en relación a la línea recta que hemos creado inicialmente lo
+
+	cuál, le servirá al sistema de referencia para calcular la distorsión ha corregir
+
+
+	_para posteriormente darle al botón de "Solve", para que así, el sistema calcule la distorsión y ha modo de
+
+	efecto corrija la distorsión de la imágen para que así, ésta distorsión no afecte el resultado del proceso 
+
+	global
+
+	
+
+
+
+
+
+
+
+

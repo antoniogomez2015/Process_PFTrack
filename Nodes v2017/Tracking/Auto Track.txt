@@ -1,0 +1,187 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá crear los puntos de seguimiento, de forma automática donde el sistema determinará
+
+	la ubicación de los puntos generados
+
+
+	_de ésta manera, a través, de éste modo podremos crear puntos de seguimiento automáticamente y gestionados por
+
+	el propio sistema lo cuál, nos eviará realizar el proceso manualmente
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo "Estimate Focal", ó "Undistort", por lo general y una vez allí,
+
+	hacer "mouse right click", para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Tracking/
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Auto Track", para que así, éste sea agregado al arbol de 
+
+	nodos del sistema
+
+
+
+
+
+	Workflow:
+	_________
+
+	_una vez agregado el nodo de "Auto Track", y de haber hecho doble click, en éste para ver sus opciones
+
+
+
+	Current:
+	________
+
+	_podremos seleccionar entre las diferentes cámaras que tengamos creadas en el arbol de nodos, como también,
+	
+	cargar un preset, existente
+
+
+
+	Options:
+	________
+
+
+	Parameters:
+
+	_a través, de las opciones de configuración de los puntos de trckeo, podremos indicar el criterio de trabajo
+
+	como canles de color, número de tracks, y targets, el tamño de los puntos de track, el área y tamaño de muestreo,
+
+	umbral de rastreo, mínima longitud de análisis, umbral de falla de análisis
+
+
+	_así, como también, podremos indicar los valores de "desde - hasta", ha cubrir del área de reproducción del
+
+	timeline, como también, escala de puntos de trackeo, imágen proxi al source original, prioridad de "presición",
+
+	"velocidad", ó "flujo optico"
+
+	
+
+
+	Errors:
+
+	_ésta opción nos permitirá visualizar un rango ó umbral de errores del análisis a través, de un gráfico por
+
+	medio del cuál, podremos estimar la calidad ó validés del resultado obtenido del proceso de seguimiento de un
+
+	punto determinado
+
+
+	_pudiendo incluso poder especificar un umbral ó límite a partir del cuál, se tolerará un porcentaje de error
+
+	en punto de trackeo respectivo seleccionado a través, de las opciones de "Trim"
+
+
+	_de ésta manera, podremos corregir ó minimizar las estimaciones no aceptables realizadas por el sistema de
+
+	forma automática a partir de la generación de todos los puntos de trackeo automáticos
+
+
+
+	Aceleration:
+
+	_ésta opción nos permitirá visualizar un rango ó umbral de errores del análisis a través, de un gráfico por
+
+	medio del cuál, podremos estimar la calidad ó validés del resultado obtenido del proceso de seguimiento de un
+
+	punto determinado
+
+
+	_pudiendo incluso poder especificar un umbral ó límite a partir del cuál, se tolerará un porcentaje de error
+
+	de velocidad en punto de trackeo respectivo seleccionado a través, de las opciones de "Trim"
+
+
+	_de ésta manera, podremos corregir ó minimizar las estimaciones no aceptables realizadas por el sistema de
+
+	forma automática a partir de la generación de todos los puntos de trackeo automáticos
+
+
+
+
+
+	Tracks:
+	_______
+
+	_una vez hemos indicado los criterios de trabajo y acción, como por ejemplo; la cantidad de puntos de trackeo,
+
+	tamaño, otros
+
+
+	_podremos ir a la sección "Track", en la cuál, podremos darle al botón de "Auto-Track", para que así, el 
+
+	sistema comienze ha realizar un análisis automático una vez hacia adelante y una vez hacia atras de forma
+
+	conjunta ó continuada de todos los puntos de tracks, generados automáticamente por el sistema
+
+
+	_una vez terminado el proceso de siguimiento de todos los puntos el sistema nos listará todos los puntos de
+
+	trackeo genrados para que así, podamos filtrar, visualizar, corregir y eliminar puntos determinado a través,
+
+	del tiempo
+
+
+	_como también, podremos remover keyframes, no deseados a través, de las opciones de "Remove Current Frame", 
+
+	"Remove all earlier keyframes", y "Remove all laster keyframes"
+
+
+	_más también, podremos ocultar un punto de trackeo en un punto determinado para tener así, una visualización
+
+	determinada de la escena 
+
+
+	_así, como también, podremos hacer que el sistema "salte", un keyframe, determinado el cuál, de errores para que
+
+	el sistema no tome éste keyframe, determinado de ésta manera, el sistema no se verá afectado por éste keyframe,
+
+	erroneo
+
+
+	_más también, las puntos de trackeo generados automáticamente por el sistema los podremos marcar, recuperar,
+
+	renombrar, importar, exportar, seleccionar, otros, así, como también, cambiar el modo de visualización en el
+
+	viewport, de análisis
+	
+
+
+
+
+
+
+
+
+

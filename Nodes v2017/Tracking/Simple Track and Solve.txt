@@ -64,6 +64,50 @@
 
 
 
+
+	Criterios:
+	__________
+
+	_debemos de interpretar el material ha rastrear, de ésta manera, debemos de definir el tipo de movimiento de
+
+	la cámara
+
+
+	_de ésta manera, dispondremos de dos botónes en la parter inferior izquierda de la interface, los cuáles, 
+
+	tienen las siguientes funciones:
+
+
+		_Tipo de movimiento:
+
+
+			_Free Motion:
+
+				_ésta opción interpretará un movimiento aleatorio de la cámara
+
+
+			_Pan:
+
+				_ésta opción interpretará un movimiento de paneo horizontal de la cámara
+
+
+		_Zoom de Cámara:
+
+			
+			_Constant:
+
+				_ésta opción interpretará un movimiento zoom, de la cámara constante
+
+
+			_Variable:
+
+				_ésta opción interpretará un movimiento zoom, de la cámara irregular ó aleatorio
+
+	
+
+
+
+
 	Start Automatic Feature Tracking:
 	_________________________________
 

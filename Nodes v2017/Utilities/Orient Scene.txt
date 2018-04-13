@@ -68,9 +68,9 @@
 
 
 
-
-	Transform:
-	__________
+	
+	Current | Transform:
+	____________________
 
 	_a través, de éste módumo podremos mover, rotar y escalar el sistema generado dentro del espacio 3d, de forma
 
@@ -78,11 +78,23 @@
 
 
 
+	Display:
+	________
+
+	_éstas opciones nos permitirá poder ó nó visualizar tanto el suelo, la línea de horizonte, los puntos de 
+
+	trackeo, geometrías exsitentes, nombres de los puntos de trackeo así, como también, la información de los
+
+	puntos de trackeo
+	
+
 
 	Trackers:
 	_________
 
-	_éste módulo nos permitirá seleccionar un punto de trackeo a partir del cuál, el sistema podrá generar un 
+	_éste módulo nos listará todos los puntos de trackeo creados en la escena de nodos trackeo relacionados, para
+
+	que así, podamos seleccionar un punto de trackeo a partir del cuál, el sistema podrá generar un 
 
 	"Center Point Axis"
 
