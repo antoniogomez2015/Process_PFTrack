@@ -1,0 +1,131 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá cargar en la escena elementos 3d, disponibles en la aplicación de PFTrack, como también,
+
+	elementos 3d, personalizados por nosotros de otras aplicaciones 3d
+
+
+	_para que así, podamos ver el comportamiento del sistema generado, como la perspectiva, el movimiento de la 
+
+	cámara en relación al clip, de video analizado, problemas de perspectiva, relación de ejes de coordenadas, planos,
+
+	otros
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo "Orient Scene", por lo general y una vez allí, hacer 
+
+	"mouse right click", para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Geometry /
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Test Objet", para que así, éste sea agregado al arbol de 
+
+	nodos del sistema
+
+
+
+
+
+	Available Objects:
+	__________________
+
+	_éste módulo nos lista los objetos disponibles para ser cargados en la escena, de ésta manera, a través, de
+
+	éste panel podremos tanto importar objetos personalizados por nosotros como también, eliminar objetos 
+
+	existentes y por último, podremos agregar elementos existentes a la escena
+
+
+
+
+	Scene Objects:
+	______________
+
+
+	_éste módulo nos lista los objetos agregados a la escena previamente por nosotros en el paso anterior más
+
+	también, éste módulo nos permitirá hacer que los objetos 3d, interactúen en el espacio 3d, generado por el
+
+	sistema
+
+	
+	_a través, de herramientas de "translation, rotation, scale, otros", de ésta manera, podremos desplazar y
+
+	ajustar los diferentes elementos 3d, ha modo de proxis de visualización y montaje sobre la escena 3d,
+
+	reconstruida
+
+
+	_así, como también, podremos ajustar el plano de coordenadas de trabajo u orientación de los ebjetos 3d, 
+
+	imcorporados en la escena 3d, generada por el sistema
+
+
+	_más también, podremos duplicar elemento u objetos 3d, existentes para que así, podamos modular éstos en la
+
+	escena 3d, generada
+
+
+	_y po último, podremos eliminar objetos 3d, de la lista de objetos que hayamos seleccionado previamente
+
+
+
+
+
+	Colour Layers:
+	______________
+
+	_éste módulo nos permitirá indicarle al sistema los criterios de color y valores de la layer, de trabajo como
+
+	canal de color, ganancia de luminancia, tango de niveles de grises
+
+
+
+
+	Display:
+	________
+
+	_éste módulo nos permitirá filtrar los modos de visualización de los elementos 3d, cargados en la escena, de
+
+	ésta manera, podremos visualizar el piso, el horizonte, puntos de trackeo, trayectorias de seguimiento, otros
+
+
+	_como también, podremos controlar el sombreado de los elementos 3d, cargados en la escena, de ésta manera,
+
+	podremos hacer que éstos elementos 3d, sean renderizados en modo wareframe, solid, texture, transparent, otros
+
+
+
+
+
+
+
+
+
