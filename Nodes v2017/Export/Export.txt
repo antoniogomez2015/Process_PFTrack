@@ -1,0 +1,156 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá exportar el workflow, y elementos de trabajo del proceso que hemos realizado en PFTrack,
+
+	para diferentes aplicaciones más comúnes de producción y desarrollo
+
+
+	_así, como también, en los diferentes formatos universales de intercambio de archivos
+
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo "Orient Scene", ó el nodo "Test Object", por lo general y una 
+
+	vez allí, hacer "mouse right click", para abrir el panel contextual en el cuál, debemos de ir a las opciones 
+
+	de:
+
+
+		_Geometry /
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Test Objet", para que así, éste sea agregado al arbol de 
+
+	nodos del sistema
+
+
+
+
+
+	Current:
+	________
+
+	_éste módulo nos permitirá seleccionar el el formato de salida así, como también, la ruta de destino del 
+
+	proyecto exportada
+
+
+	_como también, nos pemritirá seleccionar la escala de la escena ha exportar del proyecto
+
+
+	_también, nos permitirá filtrar la visualización de elementos en el viewport, de la escena generada como
+
+	el piso, el horizonte, los tracks, existentes, sus nombres e info general
+
+
+
+
+	Options:
+	________
+
+
+	Camara:
+
+	_éste módulo nos permitirá seleccionar la cámara ha exportar dentro de la lista de cámaras disponibles en la
+
+	escena
+
+
+
+
+	Groups:
+
+	_éste módulo nos permitirá seleccionar un grupo de cámara ha exportar, ya que en el arbol de nodos se conforman
+
+	grupos de cámaras en relación a su gerarquía de nodos
+
+
+
+
+	Trackers:
+
+	_éste módulo nos permitirá seleccionar, activar ó desactivar los puntos de trakeo ha exportar ó ha excluir
+
+
+
+	
+	Geoemetry:
+
+	_éste módulo nos permitirá seleccionar los elementos 3d, ha exportar existentes en la escena, pudiendo así,
+	
+	excluir los elementos no deseados
+
+
+
+
+	Textures:
+
+	_éste módulo nos permitirá exportar las texturas generados de los procesos de mapeo y producción
+
+
+
+
+	Point Clouds:
+
+	_éste módulo nos permitirá exportar los point clouds, generados en proceso de creación de mapas de densidad,
+
+	entre otros muchos procesos de producción y paso contínuo
+
+
+
+
+
+	Complements:
+	____________
+
+
+	Clip Export:
+
+	_éste módulo nos permitirá seleccionar los clips, ó secuencia de imágenes ha exportar utilizados en el proceso
+
+	de trackeo
+
+	
+	_para su posterior uso y cargado en la aplicación de destino
+
+
+
+
+	Distortion Export:
+
+	_éste módulo nos permitirá exportar la información de distorsión de lente, de los diferentes nodos de corrección
+
+	de distorión, otros
+
+
+
+
+
+
+
+

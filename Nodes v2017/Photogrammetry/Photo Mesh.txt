@@ -1,0 +1,207 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá el cálculo y reconstrucción de la volumetría de la imágen analizada en secuencia para
+
+	que así, podamos generar una densitometría por medio de point coluds, a través, del cuáles, el sistema podrá
+
+	posteriormente generar un mapa de densidad y una geometría exportable ha aplicaciones 3d, y de producción, otros
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo de "Photo Survey", ó "Orient Scene", en la mayoría de los casos 
+
+	y hacer "mouse right click", sobre éste para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Photogrammetry /
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Photo Mesh", para que así, éste sea agregado al arbol de nodos 
+
+	del sistema
+
+
+
+
+
+	Current:
+	________
+
+	_éste módulo nos permitirá configurar el alcance del mapa de densidad generado, de ésta manera, podremos indicar
+
+	el área mínima y el área máxima a través, de valores personalizables 
+
+
+	_de ésta manera, controlaremos el grado ó umbral de penetración del mapa de densidad en el espacio a partir de la 
+
+	ubicación de la cámara hacia el infinito
+
+
+	_así, como también, controlar los elementos que se visualizarán el viewport, a la hora de generar el proceso, de
+
+	ésta manera, podremos visualizar ó no el bounding box, ó área de desrrollo, los point clouds, el piso, y las 
+
+	cámaras
+
+
+	_y el botón de "edit", nos permitirá editar el tamaño y proporción del "bounding box", ó área de análisis con la
+
+	tecla "Control", directamente en el viewport 3d
+
+
+	
+
+	Depth Map:
+	__________
+
+
+	_éste módulo nos permitirá indicarle al sistema la resolución a la cuál, se calculará el mapa de densidad, por 
+
+	defecto ésta parámetro biene indicado en un valor medio
+
+
+	_así, como también, podremos indicar el nivel de sampleo en el proceso de análisis, por defecto su valor es de 
+
+	"1"
+
+
+	_así, como también, podremos indicar un valor de variación para el sampleo del análisis en el cuál, podremos 
+
+	indicar entre un valor de regular ó acentuado ó exhaustivo
+
+
+	_más también, podremos filtrar el proceso pudiendo así, indicarle al sistema que sólo analizar el frame, actual 
+
+	ó sólo los frames, perdidos ó con problemas
+
+
+	_de ésta manera, para generar el mapa de densidad, debemos de darle a la opción de "Create", para que así, el
+
+	sistema comience ha analizar la información obtenida a través, del nodo "Photo Survey"
+
+
+	_de esta manera, una vez el sistema haya terminado de realizar el proceso podremos ver en el viewport 3d, el
+
+	mapa de densidad resultante de color gris
+
+
+	_y a su vez, podremos ver listados todos los points, que conforman el mapa de densidad listados en el panel
+
+	depth maps, en el cuál, a su vez, podremos ver el color de cada point, generado por el sistema 
+
+
+	_donde los points, de color rojo serán los más imperfectos, ó con menos covertura, y los puntos de color 
+
+	naranja y amarillos serán aceptables y los verdes serán los más correctos
+
+	
+	_así, como también, podremos controlar los modos de visualización, pudiendo así, intercambiar entre modos de 
+
+	vista espectral, sombreada, otros
+
+
+
+
+	Mesh:
+	_____
+
+	_éste módulo nos pemritirá configurar el "bounding box", ó área de análisis a través, del botón de "edit", más
+
+	el la tecla "Control", directamente en el viewport 3d
+
+
+	_así, como también, nos permitirá indicarle al sistema el umbral ó capacidad de penetración del análisis desde
+
+	el punto de la ubicación de la cámara hasta el infinito
+
+
+	_como también, nos permitirá indicarle al sistema la resolución la geometría generada, por defecto, el sistema
+
+	biene configurado con un valor de "Medium"
+
+
+	_así, como también, podremos indicar el umbral mínimo de confiabilidad del análisis, del modo de fusión de los
+
+	puntos generados que conformarán la geometría resultante, el suavizado, y el ajustado a la pseudo geometría de 
+
+	referencia a partir del proceso del nodo de "Photo Survey"
+
+
+	_de ésta manera, una vez configurado todos los parámentros deseados podremos darle al botón de "Create", para
+
+	que así, el sistema genere la geometría respectiva
+
+
+
+
+	Simplification:
+	_______________
+
+	_éste módulo nos pemritirá depurar la geometría genera por el sistema pudiendo así, indicar le número de 
+
+	triángulos ha generar, también, podremos indicar la resolución de la textura ha generar, color del mapa, el 
+
+	valor de occlusion del mapa, otros
+
+
+
+
+	Exporting:
+	__________
+
+	_éste módulo nos pemritirá configurar y exportar la geometría resultante del proceso la cuál, podremos importar
+
+	en aplicaciones 3d, y de producción
+
+
+	_de ésta manera, podremos indicar un nombre personalizado para ésta geometría generada como también, podremos 
+
+	la cámara, la escala deseada y una ruta de destino en la cuál, será exportada la geometría respectiva
+
+
+	_de ésta manera, serán exportadas todas las cámaras, la geometría, las texturas, otros, para que así, podamos
+
+	re construir la escena en otra aplicación de producción como maya, otros, posteriormente
+
+
+
+	
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+

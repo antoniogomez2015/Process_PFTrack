@@ -1,0 +1,76 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_a continuación se enuncia la configuración de nodos más comúnes de los procesos estandar ha realizar en 
+
+	PFTrack 2017:
+
+
+
+
+	3D Camara Tracking:
+	___________________
+
+
+		_Photogrammetry / Image Imput:
+
+			_éste nodo nos permitirá cargar una secuencia de imágenes separadas al arbol de nodos la cuál,
+
+			será analizada posteriormente para generación de la geometría 3d
+
+
+		_Photogrammetry / Photo Survey:
+
+			_éste nodos nos permitirá calcular la volumetría de la imágen analizada a través, del tiempo
+
+			para la generación de un sistema de point cloud, por medio del cuál, se generará una geometría
+
+			posteriormente			
+
+
+		_Utilities / Orient Scene:
+
+			_éste nodos nos permitirá re orientar la escena, pudiendo así, rotar el sistema de point cloud,
+
+			generado así, como también, moverlo y escalarlo, otros
+
+
+			_para que así, éste se siña correctamente a la imágen original ó imágen de referencia en los
+
+			casos en los que no haya coincidencia a la hora de realizar el proceso
+
+
+		_Photogrammetry / Photo Mesh:
+
+			_éste nodo nos permitirá generar primeramente un mapa de densidad a partir de los point clouds,
+
+			generados en el proceso anterior
+
+
+			_de ésta manera, a través, de éste mapa de densidad que hemos creado podremos posteriormente 
+
+			crear una geometría 3d, la cuál, representará todas las áreas y volúmenes de la imágen original
+
+
+			_la cuál, podrá ser exportada 
+
+
+
+
+
+
+
+

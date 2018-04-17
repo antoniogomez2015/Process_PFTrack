@@ -1,0 +1,151 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá la ingesta de imágenes en secuencia pero de forma independiente, es decir, nos
+
+	permitirá agregar grupos de imágenes independiente unas de otras dentro del arbol de nodos del sistema
+
+
+
+
+	Workflow:
+	_________
+
+	_para lo cuál, debemos de abrir el panel de "File Browser", así, como también, debemos de abrir el panel
+
+	"Media Bins", a través, de sus íconos respectivos
+
+
+	_de ésta manera, en el panel "File Browser", debemos de navegar hasta la ubicación de la secuecia de imágenes
+
+	ha analizar
+
+
+	_para a continuación ir al panel "Media Bins", y allí darle al botón de "Add a New Top Level Scene", para que
+
+	así, se cree un nuevo contenedor en el cuál, podremos volcar las secuencia de imágenes seleccionadas en el 
+
+	panel "File Browser", éste contenedor lo podremos renombrar y borrar respectivamente
+
+
+	_así, como también, podremos organizar el material importado en carpetas a través, de la opción de 
+
+	"Add a Subfolder to a Scene", en proyectos complejos y ámplios
+
+
+	_para posteriormente volver al panel "File Browser", el cuál, nos mostrará el material de archivo en una 
+
+	archivo único por secuencia de imágenes, el cuál, debemos de arrastrar al panel "Media Bins", en los casos
+
+	en los que desiemos importar una secuencia de imágenes completa
+
+
+	_más en los casos en los que desiemos importar sólo parte de una secuencia de imágenes, debemos de darle a la
+
+	opción de "Showing Grouping Images Secuence...", en la parte inferior del panel "File Browser", para que así,
+
+	éste panel nos muestra todas las imágenes que conforman la secuencia de imágenes respectiva
+
+
+	_para que así, podamos seleccionar manualmente sólo las imágenes ha importar las cuáles, tendremos que 
+
+	arrastrar al panel "Media Bins", para su posterior proceso
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos de ir al panel propiedades de parte baja ó media de la interface, y una vez allí, 
+
+	darle al botón de "Nodes", para posteriormente una vez allí, entrar en la categoría de:
+
+
+		_Photogrammetry /
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Image Imput", para que así, éste sea agregado al arbol de 
+
+	nodos del sistema
+
+
+
+
+
+	Images:
+	_______
+
+	_para posteriormente proceder ha arrastrar la secuencia de imágenes ó imágenes independientes cargadas en el
+
+	panel "Media Bins", sobre el módulo ó listado de archivos "Images", del nodo Image Imput, para que así, el
+
+	material de archivo ahora esté disponible para el sistema ha analizar
+
+
+	_más también, éste módulo nos permitirá cambiar la orientación de imágenes independiéntemente como también, 
+
+	de eliminar imágenes por separado de la secuencia cargada, otros
+
+
+
+	Clip:
+	_____
+
+	_éste módulo nos permitirá poder indicar el frame rate, de la secuencia de imágenes cargada 
+
+
+	_así, como también, nos permitirá indicar un frame offset, en los casos en los que queramos despreciar 
+
+	parte del metraje inicial ó final de la secuencia cargada
+
+
+	_como también, podremos hacer rotaciones de imágenes como también, inversiones horizontales y verticales
+
+	de las imágenes respectivamente
+
+
+
+	Camara Preset:
+	______________
+
+	_éste módulo nos pemritirá poder seleccionar un preset de cámara y formato el cuál, coincida con el manterial
+
+	de archivo cargado
+
+
+	_así, como también, nos ofrecerá una opción en la cuál, el sistema se ajustará automáticamente al tamaño y
+
+	características del material de archivo importado a través, de la opción de "Match to clip"
+
+
+
+	
+	
+
+
+
+
+
+
+
+

@@ -1,0 +1,179 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá el cálculo y análisis ha modos de tracks points, de la volumetría de la imágen analizada 
+
+	en secuencia para que así, podamos generar una densitometría por medio de point coluds, posteriormente a través, 
+
+	del cuáles, el sistema podrá posteriormente generar un mapa de densidad y una geometría exportable ha aplicaciones 
+
+	3d, y de producción, otros
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo de "Image Imput", en la mayoría de los casos y hacer 
+
+	"mouse right click", sobre éste para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Photogrammetry /
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Photo Survey", para que así, éste sea agregado al arbol de nodos 
+
+	del sistema
+
+
+
+
+
+	Camara:
+	_______
+
+	_éste módulo nos permitirá poder indicar las características de la óptica de la cámara con la cuál, fue realizada 
+
+	la toma del material de archivo
+
+
+	_por defecto, los datos vienen indeterminados a través, de la opcíon de "Unknow"
+
+
+	_más para cuando utilizemos la opción de "Unknown", dispondremos de la opción de "Varible focal", de ésta manera,
+
+	ésta opción le indicará el sistema que se ha hecho "Zoom", con un objetivo de focal variable en la escena
+
+
+	_más la opción de "Initialized", y "Known" nos permintirá poder indicar el rango de la longitud focal utilizada 
+
+	por el objectivo utilizado para grabar el material de archivo analizado
+
+
+	_más también, nos permitirá indicar un rango de ajuste u olgura de error de éste rando de la focal estimada
+
+
+	_por otra parte nos permitirá indicar un campo de visuón del objeto en concreto utilizado
+
+
+	
+
+	Lens Distortion:
+	________________
+
+
+	NOTA: la ocnfiguración de éste módulo es obligatoria para la generación del sistema
+
+
+	_éste módulo nos permitirá calcular ó interpretar la distorsión en la escena, la cuál, la podremos cargar de una
+
+	archivo externo ó le podremos indicar al sistema que éste realize una auto interpretación de la distorsión en las
+
+	diferentes propiedades y características como en el orden superior, interior y central
+
+
+
+	Point Matching:
+	_______________
+
+	_éste módulo nos pemritirá seleccionar el criterio de trabajo como por ejemplo, los canales color, el umbral de
+
+	precisión como también, podremos indicar a partir de que frame, comenzará el analisis y hasta que frame
+
+
+	_así, como también, podremos indicar si el análisis será exhaustivo ó estandar ó en ciclo así, como también, 
+
+	podremos indicarle al sistema si el análisis será ponderado en relación a la primera imágen
+
+
+	_más también, tendremos la posiblidad de crear grupos ó regiones de puntos de análisis para que así, podamos
+
+	segmentar ó despreciar ciertas áreas del análisis realizado previamente a través, de selecciones específicas
+
+	en l viewport 3d, de análisis
+
+
+
+
+	Point Editing:
+	______________
+
+	_éste módulo nos pemritirá editar los point de seguimento y point clouds, generados por el sistema lo que nos
+
+	permitirá a su vez, poder configurar gran parte de las opciones del módulo anterior y sus grupos ó regiones
+
+
+
+	Camara Solver:
+	______________
+
+	_éste módulo nos permitirá poder configurar las características básicas para la generación del sistema, de ésta
+
+	manera, podremos indicar a partir de que frame, comenzaremos ha generar la volumetría 3d, hasta que frame, final
+
+
+	_de ésta manera, podremos indicar que el sistema comienze ha analizar todos los frames, existentes en el 
+
+	timeline, a partir del frame "1", (opción por defecto)
+
+
+	_como también, podremos hacer que el sistema sólo analizace y genere el frame "1", lo cuál, nos servirá de 
+
+	referencia así, como tambíén, para la generación de varios sistema de mapas de densidad, otros
+
+
+
+	Display:
+	________
+
+	_éste módulo nos permitirá poder controlar la visualización de los elementos en el viewport, 2d, y 3d, de ésta
+
+	manera, podremos activar ó desactivas las siguientes opciónes:
+
+
+	_podremos mostrar el piso, todas las cámaras, región contenedora de elementos, mostrar todos los puntos 
+
+	rastreados, en el viewport, 2d, 
+
+	
+	_podremos también, mostrar todos los point clouds, en el viewport, 2d, y 3d, otros
+
+
+	_así, como también, podremos hacer centrar un elementos seleccionado en el vieport, a través, de la opción de
+
+	"Center View" 
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+

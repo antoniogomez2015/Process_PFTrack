@@ -14,7 +14,7 @@
 
 
 
-	_a continuación se enunian la configuración de nodos más comúnes de los procesos estandar ha realizar en 
+	_a continuación se enuncia la configuración de nodos más comúnes de los procesos estandar ha realizar en 
 
 	PFTrack 2017:
 
