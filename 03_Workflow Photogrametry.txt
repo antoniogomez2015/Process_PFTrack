@@ -21,8 +21,28 @@
 
 
 
-	3D Camara Tracking:
-	___________________
+	Definición:
+	___________
+
+	_la "Photogrammetry", consiste en la extracción ó re creación del volúmen 3d, de una umágen en secuencia a través, 
+
+	de un mapa de densidad y de point clouds
+
+
+	_a través, de los cuáles, y a su vez, se podrá generar una geometría de la volumetría 3d, de la imágen en 
+
+	secuencia analizada a través, del tiempo, exportable a otras aplicaciones 3d, y de producción
+
+
+	_y como también, de una serie de cámaras que componen todos esos planos las cuáles, serán exportables y 
+
+	utilizables en otras aplicaciones de producción y paso contínuo
+
+
+
+
+	Serie de Nodos:
+	_______________
 
 
 		_Photogrammetry / Image Imput:

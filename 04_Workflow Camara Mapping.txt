@@ -1,0 +1,112 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	_a continuación se enuncia la configuración de nodos más comúnes de los procesos estandar ha realizar en 
+
+	PFTrack 2017:
+
+
+
+	Definición:
+	___________
+
+	_ésta modalidad nos permitirá hacer mapeos de imágenes proyectadas sobre geometría la cuál, podrán moverse al
+
+	unisono sobre el espacio 3d, es decir, que tanto las imágenes en secuencia podrán avanzar en el tiempo como a 
+
+	su vez, la geometría podrá evolucionar, y moverse a través, del tiempo en el espacio 3d, del viewport, de 
+
+	forma sincronizada y superpuesta a la vez
+
+
+
+	----------------------------------------------------------------------------------------------------------------
+
+
+
+
+	Serie de Nodos:
+	_______________
+
+
+		NOTA: éste proceso puede realizarse desde cero ó partir a partir de un proceso de trackeo de cámara 3d,
+
+		convencional previo
+
+		--------------------------------------------------------------------------------------------------------
+
+
+
+		_Source:
+
+			_éste nodo se auto generará en el momento de importar el material de archivo y arrastrar éste
+
+			hasta el arbol de nodos
+
+
+		_Utilities / Edit Camara:
+
+			_éste nodos nos permitirá definir la focal del objetivo óptico utilizado en la toma
+
+
+		_Lens Distortion / Undistort
+
+			_éste nodo nos permitirá estimar e indicarle al sistema la cantidad de distorsión de lente
+
+			exsitente en el material de archivo analizado
+
+
+		_Tracking / Auto Track | User Track:
+
+			_éstos nodos nos permitirán crear los puntos de seguimiento a través, de los cuáles, se 
+
+			generará la cámara 3d, posteriormente tanto de forma automática a través del nodo "Auto Track", 
+
+			como de forma manual a través, del nodo "User Track"
+
+
+		_Utilities / Orient Scene:
+
+			_éste nodo nos permitirá indicar un "center point", a través, del cuál, se indicará un 
+
+			eje de cordenadas así, como también, podremos re orientar la rotación, posición y escala
+
+			del plano en general
+
+
+		_Solving / Camara Solver:
+
+			_éste nodo nos permitirá re crear ó generar la cámara 3d, a través, de los puntos de 
+
+			seguimiento generados a través, de los nodos "Auto Track", ó "User Track", ó ambos a la vez
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

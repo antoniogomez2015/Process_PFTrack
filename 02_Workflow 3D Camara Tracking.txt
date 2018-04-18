@@ -21,8 +21,21 @@
 
 
 
-	3D Camara Tracking:
-	___________________
+	Serie de Nodos 1:
+	_________________
+
+
+		NOTA: ésta opción conjuga dos procesos en una sólo a través, el nodo "Simple Track and Solver", el cuál,
+
+		a su vez, realiza el análisis de los puntos de trackeo y a su vez, resuelve la cámara 3d
+
+
+		_así, como también, se utilizó el nodo "Estimate Focal", en los casos en los que no sabemos cuál, fue
+
+		la focal utilizada para generación clip en secuencia de imágenes utilizado
+
+		--------------------------------------------------------------------------------------------------------
+
 
 
 		_Source:
@@ -37,6 +50,13 @@
 			_éste nodos nos permitirá definir la focal del objetivo óptico utilizado en la toma
 
 
+		_Lens Distortion / Undistort
+
+			_éste nodo nos permitirá estimar e indicarle al sistema la cantidad de distorsión de lente
+
+			exsitente en el material de archivo analizado
+
+
 		_Tracking / Simple Track and Solver:
 
 			_éste nodos nos permitirá crear el trackeo y a su vez, generar la cámara 3d
@@ -49,6 +69,85 @@
 			eje de cordenadas así, como también, podremos re orientar la rotación, posición y escala
 
 			del plano en general
+
+
+
+
+
+
+	Serie de Nodos 2:
+	_________________
+
+
+		NOTA: ésta opción utilizó el nodo "Edit Camara", en los casos en los que si sabemos cuál, fue
+
+		la focal utilizada para generación clip en secuencia de imágenes utilizado
+
+		
+		_así, como también, utiliza nodos de análisis de puntos de trackeo independientes como "Auto Track",
+
+		y "User Track"
+
+
+		_lo cuál, le llevará también ha utilizar un nodo independiente para re solver la cámara 3d, a través,
+
+		del nodo "Camara Solver"
+
+		--------------------------------------------------------------------------------------------------------
+
+
+
+		_Source:
+
+			_éste nodo se auto generará en el momento de importar el material de archivo y arrastrar éste
+
+			hasta el arbol de nodos
+
+
+		_Utilities / Edit Camara:
+
+			_éste nodos nos permitirá definir la focal del objetivo óptico utilizado en la toma
+
+
+		_Lens Distortion / Undistort
+
+			_éste nodo nos permitirá estimar e indicarle al sistema la cantidad de distorsión de lente
+
+			exsitente en el material de archivo analizado
+
+
+		_Tracking / Auto Track | User Track:
+
+			_éstos nodos nos permitirán crear los puntos de seguimiento a través, de los cuáles, se 
+
+			generará la cámara 3d, posteriormente tanto de forma automática a través del nodo "Auto Track", 
+
+			como de forma manual a través, del nodo "User Track"
+
+
+		_Utilities / Orient Scene:
+
+			_éste nodo nos permitirá indicar un "center point", a través, del cuál, se indicará un 
+
+			eje de cordenadas así, como también, podremos re orientar la rotación, posición y escala
+
+			del plano en general
+
+
+		_Solving / Camara Solver:
+
+			_éste nodo nos permitirá re crear ó generar la cámara 3d, a través, de los puntos de 
+
+			seguimiento generados a través, de los nodos "Auto Track", ó "User Track", ó ambos a la vez
+
+	
+
+
+
+
+
+
+
 
 
 
