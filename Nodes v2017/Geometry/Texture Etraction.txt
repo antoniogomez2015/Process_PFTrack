@@ -1,0 +1,116 @@
+
+
+
+
+	PFTrack
+
+		Semi-Automatic Stereoscopic Conversion_hd
+
+			https://www.youtube.com/watch?v=MdF37l9jQrw
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá exportar una textura mapeada sobre una geoemtría 3d, a través, de diferentes parámetros
+
+	y controles, de ésta manera, podremos exportar el proceso de camara mapping, ha otras aplicaciones 3d, y de 
+
+	paso contínuo
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo de "Surve Solver", en la mayoría de los casos y hacer 
+
+	"mouse right click", sobre éste para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Geometry /
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Texture Extraction", para que así, éste sea agregado al arbol de 
+
+	nodos del sistema
+
+
+
+
+
+	Workflow Camara  Mapping de Elementos Estáticos:
+	________________________________________________
+
+	_una vez hemos realizado el proceso de "Survey Solver", es decir, de hacer mapeado una textura sobre una
+
+	geometría 3d, dentro del viewport3d, de pftrack
+
+
+	_podremos ahora a través, del nodo "Texture Extración", configurar y exportar el proceso realizado
+
+
+	_para lo cuál, debemos de ir a sus opciones de: "UV Mapping", y una vez allí, entrar a las opciones de
+
+	"UV Projection", y una vez allí, seleccionar la opción de "Camara", para que así, el sistema tome la 
+
+	información de la cámara generada a través, del nodo "Survey Solver"
+
+
+	_para posteriormente ir a sus opciones de "Display", y una vez allí, ir a las opciones de "Render Style", y
+
+	una vez allí, seleccionar la opción de "Texture"
+
+
+	_y a su vez, podremos también, activar los modos de visualización de "Show horizon", y "Show Projection", 
+
+	para tener así, una mejor visualización del sistema ha generar
+
+
+	_y por último ir a sus opciones de "Paint", y una vez allí, darle a la opción de "Export", pudiendo así, 
+
+	indicarle al sistem las características deseadas, otros
+
+
+	_de ésta manera, podremos exportar el proceso realizado ha otras aplicaciones de producción y paso contínuo
+
+
+
+	
+	Current:
+	________
+
+	_a través, de éste módumo 
+
+
+
+
+	Objects:
+	________
+
+	_éste módulo
+
+
+
+	Paint:
+	______
+
+	_éste módulos 
+	
+
+
+
+
+
+
+

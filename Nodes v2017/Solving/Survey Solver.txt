@@ -1,0 +1,298 @@
+
+
+
+
+	PFTrack
+
+		Semi-Automatic Stereoscopic Conversion_hd
+
+			https://www.youtube.com/watch?v=MdF37l9jQrw
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá mapear una secuencia de imágenes sobre una gometría dentro del viewport 3d, de pftrack
+
+
+	_de ésta manera, podremos trackear un escena en la cuál, podremos importar un geometría que emule las paredes,
+
+	el poso, marcos, puertas, mesas y demás mobiliario de la escena
+
+
+	_para que así, podamos recrear los volúmenes de escena y a su vez, poder re mapear éstas áreas con la textura
+
+	de la escena original
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo de "User Track", ó "Auto-Track" en la mayoría de los casos y hacer 
+
+	"mouse right click", sobre éste para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Solving /
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Survey Solver", para que así, éste sea agregado al arbol de nodos 
+
+	del sistema
+
+
+
+
+
+	Workflow:
+	_________
+
+	_una vez agregado el nodo de "Camara Solver", y de haber hecho doble click, en éste para ver sus 
+
+	opciones
+
+
+	_de ésta manera, dispondremos de tres módulos a través, de los cuáles, podremos configurar toda la escena
+
+	ha generar posteriormente una vez generado el sistema
+
+
+	_para posteriormente ir a las opciones ó módulo de "Geometry", en el cuál, podremos darle a al botón de
+
+	"Import", a través, del cuál, podremos importar una geometría personalizada la cuál, deberá tener la forma
+
+	dimensión de al área ha emular dentro de la escena del viewport 3d
+
+
+
+	
+	Current:
+	________
+
+	_a través, de éste módumo podremos seleccionar el grupo cámara de trabajo así, como también, el rango de 
+
+	trabajo indicado "front / end", frames
+
+
+	_así, como también, nos brinda una opción para indicar el frame, inicial a partir del cuál, se comenzará ha
+
+	realizar el análisis, de ésta manera, el sistema no realizará el análisis por defecto desde el frame "0",
+
+	para lo cuál, tendremos que desactivar la opción de "Set initial frames automatically"
+
+
+	_también dispone de una opcíón "Solve for initial solution only", (indeterminada)
+
+
+	_también dispone de una opcíón "Use input motion as hint", ésta opción hará que el sistema contemple el 
+
+	movimiento de la cámara entrante como el movimiento sugerido ha recrear
+
+
+	_también, podremos hacer "Solve un-surveyed tracker", de ésta manera, serán contemplados los trackers, que no
+
+	sean parte del proceso de trackeo directo utilizados por nodos anteriores para la generación de la cámara 3d
+
+
+	_de ésta manera, una vez hayamos realizado todos los ajustes y configuraciones podremos hacer "Solve All", 
+
+	para que así, el sistema realize todo el proceso y cálculo el sistema ha generar
+
+
+	_como también, una vez realizado el proceso, podremos realizar ajustes sobre el mismo refinando éste a través,
+
+	de la opción de "Refine All"
+
+
+	NOTA: una vez hayamos realizado el proceso de "Solve All", se crearán puntos de trackeo con una cámara, muy
+
+	similares a los de un sistema de trackeo de cámara 3d, convencionales, más en éste caso, el sistema estará
+
+	ajustado para la proyección de cámara sobre el elemento 3d, ó "camara mapping"
+
+
+
+
+	Display:
+	________
+
+	_éstas opciones nos permitirá poder ó nó visualizar tanto el suelo, la línea de horizonte, los puntos de 
+
+	trackeo, geometrías exsitentes, proyecciones, nombres de los puntos de trackeo así, como también, la información 
+
+	de los puntos de trackeo
+
+
+	_más también, nos permitirá poder hacer selecciones de puntos de trackeo de forma interactiva directamente en el
+
+	viewport, de análisis ó en el view 3d, para lo cuál, dispondremos del botón "Marquee"
+
+
+	_de ésta manera, cuando el botón "marquee", esté activado podremos hacer selecciones de tipo rectángulo sobre 
+
+	grupos de puntos de trackeo determinados contiguos unos de otros
+
+
+	_más también, podremos ir sumando seleccionaes, creando selecciones posteriores con la tecla "Control", 
+
+	presionada previamente
+
+
+	_más también, podremos hacer selecciones personalizadas con la opción de modo de selección de tipo "lazo", para
+
+	la cuál, debemos de pulsar la tecla "Shift", previamente antes de realizar la selección respectiva
+
+
+
+
+	Camara:
+	_______
+
+	_éste módulo nos permitirá poder indicar las características de la óptica de la cámara con la cuál, fue realizada 
+
+	la toma del material de archivo
+
+
+	_por defecto, los datos vienen indeterminados a través, de la opcíon de "Unknow"
+
+
+	_más para cuando utilizemos la opción de "Unknown", dispondremos de la opción de "Varible focal", de ésta manera,
+
+	ésta opción le indicará el sistema que se ha hecho "Zoom", con un objetivo de focal variable en la escena
+
+
+	_más la opción de "Initialized", y "Known" nos permintirá poder indicar el rango de la longitud focal utilizada 
+
+	por el objectivo utilizado para grabar el material de archivo analizado
+
+
+	_más también, nos permitirá indicar un rango de ajuste u olgura de error de éste rando de la focal estimada
+
+
+	_por otra parte nos permitirá indicar un campo de visuón del objeto en concreto utilizado
+
+	
+
+
+	Distortion:
+	___________
+
+	_éste módulo toamará la información de la distorsión obtenida de nodos anteriores, de ésta manera, a través,
+
+	de un nodo de "Distortion/ Undistortion", podremos previamente definir la distorsión existente en la 
+
+	secuencia de imágenes
+
+
+
+	Geometry:
+	_________
+
+	_ésta módulo nos permitirá importar una geometría personalizada realizada en una aplicación 3d, a partir de 
+
+	la exportación de una secuencia de imágenes corregida de perspectiva con el software pftrack, y así, como
+
+	también, de la exportación de unos puntos de trackeo como de una cámara 3d
+
+
+	_de ésta manera, una vez hemos importado un modelo 3d, podremos cambiar el modo de coordenadas de éste como
+
+	también, su modo de sombreado ó shading, y por último podremos hacer transformaciones espaciales sobre éste
+
+	como translaciones, rotaciones y escala dentro del viewport 3d, generado por el sistema previamente
+
+
+	_para que así, a través, de éstas herramientas de transformación espacial podamos re ubicar éste elemento 3d,
+
+	en su lugar respectivo dentro de la escena ha emular dentro del viewport 3d, generado por el sistema
+
+
+	_de ésta manera, una vez hemos colocado el elemento 3d, en su lugar respectivo dentro de la escena 3d, debemos
+
+	ahora de ir al módulo de "Display", en el cuál, debemos de darle a la opción de "Marquee" 
+
+
+	_para que así, podamos hacer una selección de tipo rectangulo ó lazo de los puntos de trackeo existentes 
+
+	dentro del área correspondiente el elemento 3d, que hemos super puesto en el viewport 2d
+
+
+	_de ésta manera, una vez hayamos seleccionado los respectivos puntos de trackeo existente dentro del área 
+
+	respectiva podremos ahora volver al módulo de "Geometry", en el cuál, tendremos pulsar el botón de 
+
+	"Generate Survey"
+
+
+	_para que así, el sistema haga especial énfasis en los puntos de trakeo correspondientes al área de 
+
+	intercepción entre la geometría 3d, importada y la secuencia de imágenes en movimiento a través, del tiempo
+
+
+	NOTA: por ésta razón para éste tipo de casos es combeniente hacer un doble seguimiento de puntos, uno general
+
+	ó automático para la escena general, y otro personalizado para éstas áreas que serás re construidas con
+
+	geometría 3d, para que así, tengamos más puntos de trackeo de referencia y específicos y en perspectiva
+
+
+	_y por último, una vez hayamos configurado todos los parámetros y características podremos volver al módulo
+
+	"Geometry", e ir a las opciones de "Render Style", y allí, seleccionar la opción de "Texture", para que
+
+	así, podamos la texturización ó mapeado del elemento 3d, directamente en el viewport 3d
+
+
+
+	LIDAR:
+	______
+
+	_(Indeterminado)
+
+
+
+	Trackers:
+	_________
+
+	_éste módulo nos listará todos los puntos de trackeo exsitentes para la generación del sistema, de ésta manera,
+
+	podremos activar ó desactivar puntos de trakeo, eliminar éstos, también, podremos importar y exportar los 
+
+	puntos de trackeo, cambiar su ejes de cordenadas, otros
+
+
+
+	Errors:
+	_______
+
+	_éste módulo nos permitirá visualizar el umbral de errores de los puntos de trackeo realizados, de ésta manera,
+
+	podremos indicar un umbral de errores aceptables pudiendo marginar el umbral de error tolerable a través, del
+
+	tiempo, por medio de las opciones de "Trim"
+
+
+
+	Solver Log:
+	___________
+
+	_éste módulos nos listará todos los problemas encontrados en cada uno de los procesos realizados
+	
+
+
+
+
+
+
+

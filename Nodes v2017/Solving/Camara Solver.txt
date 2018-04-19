@@ -81,7 +81,7 @@
 	Current:
 	________
 
-	_a través, de éste módumo podremos seleccionarl a cámara de trabajo así, como también, el rango de trabajo
+	_a través, de éste módumo podremos seleccionar la cámara de trabajo así, como también, el rango de trabajo
 
 	indicado "front / end", frames
 

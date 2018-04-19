@@ -32,6 +32,118 @@
 	forma sincronizada y superpuesta a la vez
 
 
+	_más también, tendremos la pibilidad de rastrear geometría en movimiento por ejemplo, la de un rosto de un
+
+	actor el cuál, interactúa con la escena estática
+
+
+	_pudiendo así, rastrear el movimiento de translación, rotación y escala de la geometría sobre el rostro del
+
+	actor respectivo para posteriormente hacer un mapeo sobre ésta geometría y sobre éste actor
+
+
+
+
+
+	Workflow Elemento Estáticos:
+	____________________________
+
+	_de ésta manera, podremos hacer trackeo de cámara 3d, para posteriormente llevar ésta secuencia de imágenes
+
+	corregida junto con los puntos de trackeo y cámara 3d geneda ha una aplicación 3d
+
+
+	_en la cuál, podremos re construir elementos 3d, como paredes, puertas, marcos, mesas y demás mobiliario y
+
+	elementos de la escena
+
+
+	_haciendo uso de la referencia de la cámara y de la secuencia de imágenes cirregidas que hemos exportado de 
+
+	pftrack
+
+
+	_para posteriormente proceder ha exportar ésta geometría que hemos realizado en la aplicación en 3d, en 
+
+	formato de paso contínuo como .obj
+
+
+	_la cuál, posteriormente podremos importar dentro de pftrack, a través, del nodo "Survey Solver", para que
+
+	así, podamos ubicar nuevamente ésta geometría en su lugar respectivo dentro del viewport 3d, de pftrack, en
+
+	relación a la secuencia de imágenes de referencia
+
+
+	_de ésta manera, podremos posteriormente proceder a hacer un mapeo de texturas sobre la geometría importada
+
+	a partir de la vista de la cámara a través, del tiempo
+
+
+	_de ésta manera, una vez terminado el proceso podremos entonces exportar éstas texturas, geometrías, otros
+
+	nuevamente ha la aplicación 3d, y demás aplicaciones de producción y paso contínuo por medio del nodo
+
+	"Texture Export"
+
+
+	_éste sistema está conformado por los siguientes nodos:
+
+
+		_Source
+
+		_Utilities / Estimate Focal | Edit Camara
+
+		_Distortion / Undistort
+
+		_Tracking / Auto Track
+
+		_Solving / Survey Solver
+
+		_Geometry / Texture Export
+
+		_Export / Export
+
+
+
+
+
+	Workflow en Movimiento:
+	_______________________
+
+	_también, podremos hacer un trackeo de cámara 3d, sobre la escena y expotar tanto los puntos de trackeo como
+
+	la cámara 3d, generada y así, como también, la secuencia de imágenes corregida
+
+
+	_la cuál, podremos importar posteriormente en una aplicación 3d, en la cuál, podremos recrear una topología
+
+	3d, de un rostro de actor por ejemplo, la cuál, se asemeje ó emule las proporciones y rasgos característicos
+
+	del actor respectivo
+
+
+	_para que así, posteriormente podamos importar ésta geometría del rostro del actor dentro de pftrack, a través,
+
+	del nodo "Geometry Track", y así, como también, a través, del nodo "Texture Projection"
+
+
+	_a través, del cuál, podremos trackear la distorsión del rostro del actor a través, del tiempo y el espacio 3d
+
+
+
+	_éste sistema está conformado por los siguientes nodos:
+
+
+		_Source
+
+		_Distortion / Undistortion
+
+		_Estimate Camara | Edit Camara
+
+		_Tracking / Geometry Track
+
+
 
 	----------------------------------------------------------------------------------------------------------------
 
@@ -92,6 +204,14 @@
 			_éste nodo nos permitirá re crear ó generar la cámara 3d, a través, de los puntos de 
 
 			seguimiento generados a través, de los nodos "Auto Track", ó "User Track", ó ambos a la vez
+
+
+
+		_Geometry / Texture Extraction:
+
+			_éste módulo nos permitirá configurar y exportar las proyecciones de texturas ó camara mapping,
+
+			sobre geometrías en el viewport 3d
 
 	
 
