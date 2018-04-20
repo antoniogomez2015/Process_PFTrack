@@ -128,7 +128,37 @@
 	del nodo "Geometry Track", y así, como también, a través, del nodo "Texture Projection"
 
 
-	_a través, del cuál, podremos trackear la distorsión del rostro del actor a través, del tiempo y el espacio 3d
+	_a través, del nodo "Geometry Track", podremos trackear la distorsión del rostro del actor a través, del tiempo 
+
+	y el espacio 3d
+
+
+	_de ésta manera, podremos a través, del módulo de "Geometry Track/Geometry/", y una vez allí, darle al botón de
+
+	"Head", para que así, se nos abra el explorador en el cuál, podremos seleccionar la geometría ha importar
+
+
+	_para a continuación una vez hemos importado la geometría respectiva, podremos ir a las opciones de 
+
+	"geometry track/tracking", en la cuál, encontraremos las opciones de transfomración del elemento 3d, que hemos
+
+	importado como "transform/rotate/scale", a través, de las cuáles, podremos reposicionar el modelo 3d, en la
+
+	ubicación deseada dentro de la escena tanto 2d, como 3d
+
+
+	_para lo cuál, por lo general requeriremos de re ajustar la posición del pivot, de la geometría, pasando éste
+
+	del centro del viewport 3d, al centro de la masa del objeto 3d, para lo cuál, dispondremos del botón de
+
+	"Center Pivot"
+
+
+	_de ésta manera, ahora debemos de re ubicar el elemento 3d, en su lugar respectivo para lo cuál, lo más 
+
+	recomendable es ir a las opciones de "Geometry Track/Display/Render Style", y una vez allí, seleccionar la opción 
+
+	de "Transparency", para que así, podamos ver tanto el elemento 3d, como la secuencia de imágenes en background
 
 
 
