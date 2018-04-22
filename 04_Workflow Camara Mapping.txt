@@ -161,6 +161,9 @@
 	de "Transparency", para que así, podamos ver tanto el elemento 3d, como la secuencia de imágenes en background
 
 
+	_
+
+
 
 	_éste sistema está conformado por los siguientes nodos:
 

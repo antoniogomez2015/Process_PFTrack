@@ -1,0 +1,275 @@
+
+
+
+
+	PFTrack
+
+		http://www.thepixelfarm.co.uk/
+			http://www.thepixelfarm.co.uk/pftrack/
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	NOTA: en la versión PFTrack 2017 éste nodo no me funciona hasta ahora
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá importar geometría y trackear ésta según el movimiento de la secuencia de imágenes
+
+	de fondo de la composición para que así, la geometría emule los movimientos de partes de la imágen a la cuál, 
+
+	ésta se superpone
+
+
+	_de ésta manera, la geometría 3d, emulará los movimientos en el espacio 3d, pudiendo así, hacer correcciones
+
+	de movimiento tanto de translación, rotación y escala en el viewport 3d, a través, del tiempo
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo "User Track", ó "Auto Track", por lo general y una vez allí,
+
+	hacer "mouse right click", para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Tracking/
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Geometry Track", para que así, éste sea agregado al arbol de 
+
+	nodos del sistema
+
+
+
+
+
+	Workflow:
+	_________
+
+	_una vez agregado el nodo de "User Track", y de haber hecho doble click, en éste para ver sus opciones
+
+
+
+	Cámara:
+	_______
+
+	_éste módulo nos permitirá poder indicar los parámetros y características de la cámara u óptica utilizada 
+
+	para generar la secuencia de imágenes respectiva de trabajo
+
+
+	_por defecto éste nodo tomará la información de la cámara de nodos anteriores como "Edit Camara", ó 
+
+	"Estimate Camara"
+
+
+	_más también nos permitirá indicar la cercanía de los planos, pudiendo así, indicar la distancia del plano
+
+	más cercano y la del plano más lejano
+
+
+
+
+	Geometry:
+	_________
+
+	_éste módulo nos permitirá importar un geometría a través, del botón "Head",  así, como también, podremos
+
+	relacionar una geometría ya existente en otros nodos a través, del botón "Fetch", también, podremos guardar
+
+	una geometría editada en el sistema a través, de botón "Save"
+
+
+	_también, podremos cambiar las opciones de vista a través, del botón "View", centrar el objeto en el viewport,
+
+	3d, a través, del botón "Center Object", también, podremos centrar el pivote del elemento 3d, por medio
+
+	del botón "Center Pivot", así, como también, invertir las normales del objeto por medio del botón 
+
+	"Flip Normlas"
+
+
+
+
+
+	Display:
+	________
+
+	_éste módulo nos permitirá cambiar el modo de sombreado de la geometría importada por medio de la opción de
+	
+	"Render Style", por medio de la cuál, podremos visualizar la geometría en su maya alámbrica, transparente,
+
+	sombreada, texturizada, otros
+
+
+	_también, podremos cambiar el color base de la geometría, color referencial, por medio del botón "Match Color", 
+
+	como también, podremos centrar el modelo en el viewport, para una mayor visualización por medio del botón
+
+	"Center View"
+
+
+	_así, como también, podremos hacer variaciones sobre los elementos visualización en el viewport, de ésta 
+
+	mnera, podremos visualizar ó no el piso, la geometría, los puntos de trackeo auxiliares, los grupos de 
+
+	seguimiento de pintura, otros
+
+
+	_y por último, podremos también, ajustar la escala general de la geometría, de ésta manera, podremos re 
+
+	escalar todo el sistema al unísono
+
+
+
+
+
+	Helpers:
+	________
+
+	_éste módulo nos permitirá hacer uso de puntos de trackeo que hayamos creado previamente sobre el motivo ó área
+
+	ha emular con la geometría 3d, sobre la secuencia de imágenes de fondo 
+
+
+	_lo cuál, lo podremos realizar a través, del nodo "User Track", para que así, a través, de éste nodo podamos
+
+	crear puntos de referencia a tracko personalizados a través, del tiempo para que así, el sistema del nodo 
+
+	"Track geometry", pueda complementar el proceso de seguimiento 3d, de la geometría respectiva
+
+
+	_de ésta manera, podremos ir a las opciones de el nodo "Track Geometry/Helpers", en la cuál, podremos ver 
+
+	listados los nodos heredados del arbol de nodos
+
+
+	_para que así, podamos activar ó desactivar los track points, que deseamos que sean incluidos por el sistema 
+
+	para la realización del cálculo del sistema ha generar
+
+
+
+
+	Vertex Weights:
+	_______________
+
+	_éste módulo trabaja en conjunto en el módulo anterior de "Helpers", ya que a través, del módulo 
+
+	"Vertex Weights", nos permitirá cambiar ó personalizar la influencia de puntos de trackeo seleccionados para 
+
+	que así, un determinado punto tenga más infuencia que otro
+
+
+	_de ésta manera, debemos de ir la módulo "Helpers", en el cuál, debemos seleccioanr uno ó más puntos de trackeo
+
+	ha ajusta y, con éstos puntos seleccionados vamos al módulo de "Vertex Weights"
+
+
+	_en el cuál, a través, de sliders, podremos ajustar la influencia de los track points, seleccionados previamente
+
+
+	_pudiendo ajustar así, peso y radio ó alcance de éstos en relación a los demás
+
+
+
+
+
+	Deformable Groups:
+	__________________
+
+	_éste módulo nos permitirá crear zonas ó áreas personalizadas sobre la geometría importada las cuáles, le 
+
+	servirán al sistema como referencia de trackeo para que así 
+
+
+	_el sistema pueda emular la distorsión y movimiento del área  respectiva de la secuencia de imágenes respectiva
+
+
+	_de ésta manera, para crear una primera área de trackeo, debemos de darle al botón de "Create", para que así, se
+
+	liste como primera zona de trackeo personalizada en la lista del panel
+
+
+	_para a continuación darle click, sobre el botón de "Add..", ó "+", en la version PFTrack 2017, para que así, se
+
+	active el brush, sobre el viewport, tanto 2d, como 3d
+
+	
+	_de ésta maenra, pdoremos ir  pintando áreas por cada zona respectiva de rostro por ejemplo así, podremos ir 
+
+	repitiendo éste proceso tanto para la frente, los pómulos, naris, mandíbula, labio superior, inferior, otros
+
+
+	_para lo cuál, debemos de asignarle a cada área de seguimiento un color de visualización diferente como también,
+
+	debemos de indicarle las cordenadas de deformación para cada una, pudiendo así, indicarle cordenadas de rotación,
+
+	translación y escala respectivamente, en relación al timpo de movimiento y deformación ha emular
+
+
+	_más también, podremos borrar áreas creadas como también, resetear éstas, moverlas, escalarlas, mover su pinto
+
+	de anclaje, otros
+
+
+	_también, podremos determinar si afectar sólo a las caras frontales ó si también, a las caras posteriores de la
+
+	geometría respectiva
+
+
+
+
+
+	Tracking:
+	_________
+	
+	_éste módulo nos permitirá trackear hacia adelante ó hacia atras de forma contínua ó frame to frame, así, como
+
+	también, nos pemritirá activar la opción de "Auto refine", para que así, el sistema realize auto ajustes de
+
+	posibles errores de posicionamiento
+
+
+	_como también, nos permitirá seleccionar las cordenadas de trabajo del sistema, tanto de translación, rotación 
+
+	y escala, en relación a las propiedades de deformación que hayamos activado en las áreas de seguimiento del
+
+	módulo de "Deformable Groups"
+
+
+	_también, nos permitirá indicar un umbral de suavizado para deformación del eje "Z", por otra parte también,
+
+	dispondremos de las opciones de ""Transform Mode", por medio de las cuáles, podremos posicionar inicialmente la
+
+	geometría importada sobre el área de interés sobre la secuencia de imágenes respectiva
+
+
+	_por medio de herramientras como "translate, rotate, scale, otros", como también, dispondremos de opciones para
+
+	hacer correcciones del sistema generado a través, de las opciones de "Add Key", "Reset Frame", otros
+	
+	
+
+
+
+
+
+
+
+
+
