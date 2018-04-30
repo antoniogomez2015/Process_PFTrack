@@ -90,19 +90,99 @@
 	_éste sistema está conformado por los siguientes nodos:
 
 
-		_Source
+		_Source:
+
+			_secuencia de imágenes que conformarán el clip, ha analizar
+
 
 		_Utilities / Estimate Focal | Edit Camara
 
+			_definir la focal de la cámara utilizada para capturar el clip, ha analizar
+
+
 		_Distortion / Undistort
+
+			_corregir la distorsión existente en la secuencia de imágenes importada como clip
+
 
 		_Tracking / Auto Track
 
+			_puntos de seguimiento de referencia para generar el sistema de cámara 3d
+
+
+		_Orient Scene:
+
+			_re orientas los ejes de cordenadas del sistema así, como también, crear un epicentro
+
+
 		_Solving / Survey Solver
 
-		_Geometry / Texture Export
+			_mapeo de la secuencia de imágenes utilizada sobre la geometría importada ó relacionada
 
-		_Export / Export
+
+		_Geometry / Texture Extraction
+
+			_definición de cordenadas de mapeo de textura y exportación ha terceras aplicaciones
+
+
+		__Export / Export:
+
+			_exportar la cámara, puntos de track, objetos ó geometrías 3d, texuturas generadas y clips
+
+
+
+	_éste proceso puede tener variantes en relación al tipo trabajo en el cuál, se afronten los elementos, por 
+
+	ejemplo para mapeo de elementos estáticos como edificios y elementos similares se puede utilizar la siguiente
+
+	configuración:
+
+
+		_Source:
+
+			_secuencia de imágenes que conformarán el clip, ha analizar
+
+
+		_Utilities / Estimate Focal | Edit Camara
+
+			_definir la focal de la cámara utilizada para capturar el clip, ha analizar
+
+
+		_Tracking / User Track
+
+			_puntos de seguimiento de referencia para generar el sistema de cámara 3d
+
+
+		_Solving/ Camara Solver:
+
+			_generar la cámara 3d, y los puntos de referencia del sistema generado
+
+
+		_Orient Scene:
+
+			_re orientas los ejes de cordenadas del sistema así, como también, crear un epicentro
+
+			
+		_Image Modeling:
+
+			_modelas geometría personalizada sobre elementos complejos de la escena
+
+
+		_Geoemtry Track:
+
+			_hacer seguimiento de la geometría generada en el nodo anterior a través, del tiempo
+
+
+		_Texture Extraction:
+
+			_creación de UVs, y mapeado y pintado sobre la geometría a través, del tiempo y exportación 
+
+			final
+
+
+		_Export / Export:
+
+			_exportar la cámara, puntos de track, objetos ó geometrías 3d, texuturas generadas y clips
 
 
 

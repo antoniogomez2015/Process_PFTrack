@@ -1,0 +1,422 @@
+
+
+
+
+	PFTrack
+
+		Semi-Automatic Stereoscopic Conversion_hd
+
+			https://www.youtube.com/watch?v=MdF37l9jQrw
+
+
+		Tutorial Tracking de Video usando PF Track
+			https://www.youtube.com/watch?v=HmWVgcO_dqI
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	Descripción:
+	____________
+
+	_éste nodo nos permitirá reconstruir geometría en la escena para que así, podamos trackear ésta la cuál, 
+
+	posteriormente podrá ser exportada junto con la secuencia de imágenes, la cámara y los puntos de seguimiento
+
+	generados por el sistema
+
+
+	_de ésta manera, podremos aumentar las posibilidades de producción y paso contínuo para la generación de
+
+	efectos especiales, mapeos, volumetrías 3d, camara mapping, camara projection, otros
+
+
+
+
+	Node:
+	_____
+
+	_de ésta manera, debemos posarnos sobre el nodo de "Orient Scene", en la mayoría de los casos y hacer 
+
+	"mouse right click", sobre éste para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+
+
+		_Geometry /
+
+
+	_en la cuál, debemos de seleccionar el nodo de "Image Modeling", para que así, éste sea agregado al arbol de 
+
+	nodos del sistema
+
+
+
+
+
+	Workflow:
+	_________
+
+	_tendremos ha disposición diferentes formas geométricas a través, de las cuáles, podremos emular diferentes
+
+	estructuras dentro de la escena de secuencia de imágenes
+
+
+	_a través, de cubos, rectángulos, cilindros, pirámides, otros, podremos generar diferentes elementos dentro 
+
+	de la escena los cuáles, a su vez, podremos modificar y ajustar a las formas ha emular de forma precisa
+
+	por medio de sus sub-elementos vertex, y distorsiones aplicadas sobre las respectivas formas geométricas
+
+
+	_de ésta manera, podremos ir al módulo "Primitives", en el cuál, dispondremos de una serie de íconos a través,
+
+	de los cuáles, podremos cargar diferentes formas geométricas a la escena
+
+
+
+		Re Ubicar:
+		__________
+
+		_más para reubicar en su conjunto ó como un todo éstas geometrías incorporadas a la escena dispondremos 
+
+		de las opciones ó botones de "Translate", "Rotate", "Scale", del módulo de "Primitives"
+
+
+
+		
+		Edición:
+		________
+
+		_más para deformar y generar geometría más compleja, dispondremos de las opciones de los módulos:
+
+
+		"Polygon Edit", éste módulo nos permitirá crear, conectar y subdividir geometría existente en la escena
+
+		ó no
+
+
+		"Vertex Edit", éste módulo nos permitirá crear geometría personalizada en la escena lo que expandirá
+
+		las posibilidades más allá, de las formas geométricas base 
+
+
+		de ésta manera, podremos crear vertices nuevos por medio del botón "Create", y unir éstos con una arista
+
+		ó edge, a través, del botón de "Connect", del módulo "Polygon Edit" 
+
+
+		_como también, podremos mover vertex, a través, del botón "Move", lo cuál, nos permitirá distorsionar 
+
+		la geometría resultante y reubicar ésta a su vez, en situaciones y escenas complejas
+
+
+		_también, podremos sub-dividir geometría existente a través, del botón "Insert", lo cuál, divirá 
+
+		polígonos triangulando éstos
+
+
+		
+		Borrado:
+		________
+
+		_también, tendremos la psobilidad de borrar geometría generada para lo cuál, dispondremos del módulos de 
+
+		"General Edit", y de un botón de "Erase", a través, del cuál, podremos eliminar elementos y sub-elementos
+
+		seleccionados en la escena previamente
+
+
+
+	Versiones Angiguas:
+	___________________
+
+	_una vez hemos generado las geometrías requeridas por la escena respeciva, podremos hacer trackear éstas para lo
+
+	cuál, nos existe un sistema automazado para tal fin
+
+
+	_de ésta manera, tendremos que realizar el proceso de "blocking", de forma manual, es decir, que debemos de ir
+
+	avanzando el cabezal del timeline, hasta una nueva posición para posteriormente re ubicar los vertex, para
+
+	corregir así, la posición de las geometrías en la escena a través, del tiempo
+
+
+	_para que así, el sistema vaya interpolando las distorsiones y deformaciones entre los diferentes keyframes,
+
+	que vayamos generado a través, del tiempo
+
+
+
+	Versión 2017:
+	_____________
+
+	_en la versión del 2017, una vez que hemos creado, posicionado y editado las geometrías sobre la escena ó 
+
+	secuencia de imágenes podremos ahora hacer uso del nodo "Tracking/Geometry Track"
+
+
+	_de ésta manera, podremos posarnos sobre el nodo "Imagen Modeling", y hacer mouse right click, y seleccionar
+
+	la sección de "Tracking", y una vez allí, seleccionar al nodo de "Geoemetry Track", para que así, éste nodo 
+
+	sea agregado al arbol de nodos del sistema ha generar
+
+
+	_para que así, una vez agregado el nodo de geoemtry track, podamos ir su módulos de "Geoemtry", en el cuál,
+
+	dispondremos del botón de "Fetch", por medio del cuál, podremos acceder ó relacionar la geometría que hemos
+
+	realizado a través, de el nodo anterior de "Imagen Modeling"
+
+
+	_de ésta manera, podremos hacer uso ahora de las herramientas y propiedades de edición y seguimiento de
+
+	geometría del nodo "Geoemetry Track"
+
+
+	_para que así, podamos hacer todo el seguimiento de la geometría a través, de toda la distorsión y cambio
+
+	de perspectiva de la secuencia de imágenes a través, del tiempo
+
+
+	_haciendo ajustes y compensaciones de distorsión y deformación de perspectiva y geometría, otros, por medio
+
+	de keyframes
+
+
+
+
+
+
+	
+	Current Clip:
+	_____________
+
+	_a través, de éste módumo podremos indicarle al sistema cuál, será el clip, de trabajo ha analizar por el sistema
+
+
+
+
+	Polygon Editing:
+	________________
+
+	_éste módulo dibujar nueva geometría personalizada dentro de la escena para cuál, dispondremos de las siguientes
+
+	opciones:
+
+
+		_Draw:
+
+			_ésta opción nos permitirá dibujar nueva geometría vertex, ha vertex, dentro de la escena, es
+
+			decir, ésta opción nos permitirá crear tanto vertex, como edges, a la vez, generando así,
+
+			polígonos de tripo triads, ó quads, respectivamente
+
+
+		_Connect:
+
+			_ésta opción nos permitirá conectar vertex, generados previamente en la escena
+
+
+		_Triangulate:
+
+			_ésta opción nos permitirá realizar selecciones de tipo rectángulo para posteriormente 
+
+			realizar sub divisiones poligonales a través, de la herramientas de módulo de 
+
+			"Vertex Editing/Insert"
+
+
+			_así, como también, para hacer selecciones de vertex, para activar las opciones de
+
+			"Vertex Editing/Marge", de los vertex, seleccionaddos
+
+
+
+
+	Vertex Editing:
+	_______________
+
+	_éste módulo también, nos permitirá crear y editar geometría dentro de la escena, de ésta manera, podremos
+
+	conjugar éste módulo con el módulo anterior de "Polygon Editing"
+
+
+
+		Create:
+
+			_ésta opción nos permitirá crear nuevos vertex, para la creación posterior de nueva geometría
+
+			en la escena
+
+
+		_Move:
+
+			_ésta opción nos permitirá mover vertex, y geometría existente en la escena, de esta manera,
+
+			podremos distorsionar y a su vez, re ubicar geoemetría en la escena de forma personalizada
+
+			en relación a los requerimientos de la escena
+
+
+		_Insert:
+
+			_ésta opción nos permitirá dividir polygons, ó edges, seleccionados en la escena, ó 
+
+			simplemente nos posamos sobre un edge, para sub dividirlo
+
+			
+			_también, nos pemitirá dividir selecciones de edges, ó vertex, realizadas a través, de las
+
+			opciones del módulo "Polygon Editing/Insert", a través, de una selección de reactángulo
+
+
+			_de ésta manera, podremos dividir un triads, ó un quads, en más polígonos en el punto donde
+
+			hayamos hecho mouse left click
+
+
+		_Marquee:
+
+			_ésta opcíon nos permitirá hacer selecciones de tipo rectángulo y de tipo lazo, de los 
+
+			diferentes sub elementos de las geometría generadas lo que nos permnitirá poder mover 
+
+			elementos al unísono dentro de la escena
+
+
+		_Merge:
+
+			_ésta opción nos permitirá poder fusionar vertex, seleccionados previamente a través, de
+
+			la herramienta de "Polygon Editing/Triangulate"
+
+
+
+
+	General Editing:
+	________________
+
+	_éste módulo nos permitirá poder eliminar sub elementos de las geometrías generadas en la escena
+
+
+		_Erase:
+
+			_de ésta manera, podremos seleccionar vertex, directamente en la escena ó grupos de vertex,
+
+			ha eliminar a través, de la herramienta del módulo "Polygon Editing/Triangulate"
+
+
+			_para posteriormente aplicar el botón "Erase", para que así, los vertex, seleccionados sean
+
+			borrados respectivamente
+
+
+			_como también, podremos seleccionar vertex, ha eliminar a través, del módulo "Vertex", de
+
+			forma más específica
+
+
+
+
+	Vertex:
+	_______
+
+	_éste módulo nos permitirá visualizar los vertex, generados en la diferentes geoemetrías de la escena así, como
+
+	también, de seleccionar éstos uno ha uno ó varios ó todos a la vez, así, como tambíen de deseleccionados éstos
+
+
+	_más también, podremos eliminar vertex, seleccionados ó todos al unísono
+
+
+
+
+	Primitives:
+	___________
+
+	_éste módulo nos permnitirá generar geometría bases a partir de figuras geométricas estándar, las cuáles, 
+
+	posteriormente podremos reubicar, deformar y modificar a través, del tiempo
+
+
+	_así, como también, éste módulo nos listará las geometrías generas por el sistema las cuáles, a su vez, podremos
+
+	activar, desactivar ó eliminar respectivamente, de ésta manera, para editar un geometría existente debemos 
+
+	previamente seleccionarla en éste panel
+
+
+	_más también, tendremos opciones y herramientas de deformación ó distorsión y ejes de cordenadas de trabajo ó
+
+	acción, las cuáles, tendrán acción con la herramienta activada de "Vertex Editing/Move", de ésta manera, 
+
+	dispondremos de las siguientes modalidades:
+
+
+
+		_Rigid:
+
+			_ésta opción generará distorsión sobre los vertex, seleccionados como de los vertex, contiguos
+
+			de forma proporcionada a la perspectiva de la forma geometrica y el plano de cordenadas 
+
+			generado por el sistema de cámara 3d
+
+
+		_Free:
+
+			_ésta opción nos permitirá mover vertex, seleccionados libremente en relación unos de otros,
+
+			es dicir, ésta edición de vertex, no afectará a vertex, contiguos a los vertex, seleccionados
+
+
+		_Deformation:
+
+			_ésta opción generará distorsión sobre los vertex, seleccionados como también, a los vertex,
+
+			contiguos y al volúmen de vertex, en general de la forma geométrica, ha modo de deformación 
+
+			"soft body"
+
+
+
+	_así, como también, podremos limitar éstas deformaciones a través, de los ejes de cordenadas "X,Y,Z", 
+
+	respectivamente para las diferentes transformaciones como "translate", "rotate", "scale"
+
+
+	_y complementariamente también podremos duplicar y eliminar geometrías listadas en el panel "primitives",
+
+	para que así, podamos mantener un flujo de trabajo preciso y objetivo del sistema ha generar
+
+
+
+	Display:
+	________
+
+	_éste módulo nos permnitirá cambiar los modos de visualización de los diferentes elementos de las escena como
+
+	el modo en el que se visualizará la geometría la cuál, podrá renderizarse de forma sombreada, alámbrica,
+
+	texturizada, otros
+
+	
+	_como también, podremos ó no visualizar el piso, el horizonte, podremos ver los nombre de los vertex, como
+
+	también, los vertex, ocultos previamente, otros
+
+
+	_también, podremos colorear los vertex, como dividir éstos, otros
+
+	
+
+
+
+
+
+
+

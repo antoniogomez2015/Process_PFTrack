@@ -33,9 +33,11 @@
 	Node:
 	_____
 
-	_de ésta manera, debemos posarnos sobre el nodo de "Surve Solver", en la mayoría de los casos y hacer 
+	_de ésta manera, debemos posarnos sobre el nodo de "Surve Solver", ó "Geometry Track", en la mayoría de los 
 
-	"mouse right click", sobre éste para abrir el panel contextual en el cuál, debemos de ir a las opciones de:
+	casos y hacer "mouse right click", sobre éste para abrir el panel contextual en el cuál, debemos de ir a 
+
+	las opciones de:
 
 
 		_Geometry /
@@ -90,7 +92,65 @@
 	Current:
 	________
 
-	_a través, de éste módumo 
+	_a través, de éste módulo nos permitirá indicarle al sistema cuál, serál el clip, de trabajo
+
+
+
+
+	UVs:
+	____
+
+	_éste módulo generar los uvs, para la generación del sistema, de ésta manera, dispondremos de las siguientes
+
+	opciones:
+
+
+		_UV Mapping:
+
+			_de ésta manera, a través, de ésta opción podremos seleccionar el tipo de proyección ha
+
+			generar en relación al tipo de topología, así, podremos seleccionar entre una proyección de
+
+			tipo cúbica, cilíndrica, planar, otras
+
+
+			_en relación a la complejidad y semejanza de la forma geométrica ha emular
+
+
+			_de ésta manera, una vez hemos definido el tipo de proyección ha crear debemos de darle 
+
+			al botón continuo de "Generate", para que así, las UVs, sean generadas y poder realizar
+
+			el proceso de pintado posteriormente
+
+
+
+		_Auto Generate:
+
+			_el botón le permitirá al sistema determinar automáticamente el tipo de proyección más 
+
+			adecuado para el tipo de topología existente sin nuestra intervención ó desición
+
+
+
+	Display:
+	________
+
+	_una vez finalizado el proceso de generación de UVs, del sistema, debemos de definir el tipo de shading, 
+
+	aplicado sobre la geometría, el modo más recomendado para el proceso de pintado es el "Texture", el cuál, 
+
+	nos permitirá visualizar la textura aplicada sobre la geometría posteriormente
+
+
+	_así, como también, dispondremos de un control para graduar la transparencia de la geometría existente 
+
+	en relación con la secuencia de imágenes de fondo
+
+
+	_y opcionalmente dispodnremos de controles para la visualización ó no del piso, el horizonte, los bordes
+
+	de las geometrías, las proyecciones sobre la geometría, los ejes de cordenadas, otros
 
 
 
@@ -98,14 +158,82 @@
 	Objects:
 	________
 
-	_éste módulo
+	_éste módulo nos listará los elementos ó geometrías existentes en la escena, así, como también, nos permitirá
+
+	seleccionar ó deseleccionar los elementos existentes para editarlos ó borrarlos
+
+
+	_también, dispondremos en la parte inferior de éste módulo un botón para editar los uvs, "Edit UV", a través,
+
+	del cuál, se abrirá una ventana contextual por medio de la cuál, podremos seleccionar y editar vertex y edges,
+
+	de los uvs, generados previamente
+
+
+	_así, como también, podremos mover, rotar y escalar los island, de los uvs, invertir ó reflejar éstos, otros
+
+
+	_y por último dispondremos de un botón para la generación de sistemas con texturas animadas la cuál, cambiará
+
+	a través, del tiempo, es decir, que podremos hacer pintura dinámica sobre la geometría a través, del tiempo
+
+
+	_pudiendo así, hacer correcciones y ajustes de pintura a través, del tiempo, otros
+
+
 
 
 
 	Paint:
 	______
 
-	_éste módulos 
+	_éste módulo nos permitirá indicar el radio y suavizado de la brocha ó brush, ha utilizar para el pintado de
+
+	las geometrías existentes en la escena
+
+
+	_de ésta manera, una vez hayamos seleccionado las características de la brocha, dispondremos de dos botones
+
+	para la edición de pintado, los cuáles son los siguientes:
+
+
+		_Paint:
+
+			_éste botón nos permitirá activar la brocha para proceder ha pintar ó proyectar la textura 
+	
+			sobre las geometrías existentes y activadas en la escena
+
+
+			_tanto en el viewport 2d, como en el viewport 3d, de ésta manera, poremos pintar las diferentes
+
+			facetas de las geometrías en su desplazamiento a través, del tiempo
+
+
+		_Erase:
+
+			_éste botón nos permitirá borrar áreas de las geometrías existentes y activadas en la escena
+
+			para que así, podamos hacer ajustes y correcciones a través, del tiempo, otros
+
+
+
+	_y por último, podremos exportar las geometrías generadas previamente así, como también, las proyecciones que
+
+	hemos realizado en el proceso, para lo cuál, dispondremos de las opciones de:
+
+
+
+		_Extract From:
+
+			_la cuál, nos ofrece diferentes criterios y opciones de trabajo donde la más recomendada para
+
+			la mayoría de los casos es "Vest frame UV group"
+
+
+	
+	_de ésta manera, una vez hemos definido el criterio de trabajo prodremos hacer uso del botón "Extract", para
+
+	que así, el sistema sea exportado para aplicaciones de terceros
 	
 
 
